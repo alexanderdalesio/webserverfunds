@@ -9,6 +9,21 @@
             padding: 8px;
         }
         .page-title {text-align: center;}
+        .rankings {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .ranking-form {text-align: center;}
+        .form-fields {
+            display: inline-block;
+            text-align: left;
+        }
+        .list {
+            display: inline-block;
+            text-align: left;
+        }
+        .return-button {text-align: center;}
     </style>
         <div class="page-title">
             <!--Webpage tab name-->
@@ -19,19 +34,24 @@
             <p1>Below are the hottest puppy breeds of the week, as voted by you!</p1>
         </div>
     </head>
-    <body style="background-color: #f0f0ff">
+    <body style="background-color: #eeeeff">
         <!--Ranking List-->
         <div class="rankings">
             <br/>
             <br/>
+            <br/>
+            <br/>
             <h2>Rankings for the week of August 25th</h2>
-            <ol>
-                <li>Cavaliers</li>
-                <li>Goldendoodles</li>
-                <li>Shiba Inus</li>
-                <p><i>Honourable Mention</i></p>
-                <li>Labrador Retrievers</li>
-            </ol>
+            <div class="list">
+                <ol>
+                    <li>Cavaliers</li>
+                    <li>Goldendoodles</li>
+                    <li>Shiba Inus</li>
+                    <p><i>Honourable Mention</i></p>
+                    <li>Labrador Retrievers</li>
+                </ol>
+            </div>
+        <br/>
         <br/>
         <br/>
         </div>
@@ -40,26 +60,30 @@
             <h2>Submit Your Ranking</h2>
             <p>Do you want to have a say in next week's puppy breed ranking? Complete the form below to send us your picks!</p>
             <br/>
-            <form>
-                <label for="breed1">Enter your first pick:</label>
-                <input type="text"/>
-                    <br/>
-                    <br/>
-                <label for="breed2">Enter your second pick:</label>
-                <input type="text"/>
-                    <br/>
-                    <br/>
-                <label for="breed3">Enter your third pick:</label>
-                <input type="text"/>
-                    <br/>
-                    <br/>
-                <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
-                <input type="text" required pattern="PUPPY"/>
-                    <br/>
-                    <br/>
-                <input type="submit"/>
-            </form>
+            <div class="form-fields">
+                <form>
+                    <label for="breed1">Enter your first pick:</label>
+                    <input type="text"/>
+                        <br/>
+                        <br/>
+                    <label for="breed2">Enter your second pick:</label>
+                    <input type="text"/>
+                        <br/>
+                        <br/>
+                    <label for="breed3">Enter your third pick:</label>
+                    <input type="text"/>
+                        <br/>
+                        <br/>
+                    <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
+                    <input type="text" required pattern="PUPPY"/>
+                        <br/>
+                        <br/>
+                    <input type="submit"/>
+                </form>
+            </div>
         </div>
+        <br/>
+        <br/>
         <br/>
         <br/>
         <br/>
