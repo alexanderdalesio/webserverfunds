@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Link to External CSS Sheet-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Webpage Tab Name-->
+        <title>Lab 2</title>
+    </head>
+    <body>
+        <div class="bg-image"></div>
+
+        <!--Create a create a div that looks like a button-->
+        <div class="button" id="myButton">
+            <p id="buttonText">Click me</p>
+        </div>
+        
+        <!--Text that will change upon button press-->
+        <p1 id="textToChange">Today is tomorrow.</p1>
+        
+        <script>
+            // Get the div element by its ID
+            const button = document.getElementById('myButton');
+            const text = document.getElementById('textToChange');
+
+            // Functions for button
+            button.onclick = function() {
+                alert('Button Clicked!'); 
+                text.innerHTML = 'Yesterday is today.';
+            }; // Show alert and change text on click
+            button.onmouseover = function() {button.style.backgroundColor = '#637AA8';}; // Make button lighter on hover
+            button.onmouseout = function() {button.style.backgroundColor = '';}; // Restore original color on hover out
+        </script>
+    </body>
+</html>
