@@ -24,8 +24,15 @@
             const text = document.getElementById('textToChange');
             const bg = document.getElementById('bg')
 
+            let count = 0;
+
+            function myFunction(elem) {
+                count++;
+                elem.innerHTML = count === 0 ? "Click me" : `Click me (x${count})`;
+            }
+
             // Functions for button
-            button.onclick = function() {
+            button.onclick = function(elem) {
                 alert('Button Clicked!'); 
                 text.innerHTML =
                     text.innerHTML === "Today is tomorrow."
@@ -35,6 +42,8 @@
                     bg.style.backgroundImage.includes("topo.png")
                         ? "url('media/dots.png')"
                         : "url('media/topo.png')";
+                myFunction(elem.target.querySelector('#buttonText'));
+                
 
             }; // Show alert and change text on click
             button.onmouseover = function() {button.style.backgroundColor = '#637AA8';}; // Make button lighter on hover
