@@ -18,18 +18,53 @@
         <!--Text that will change upon button press-->
         <p1 id="textToChange">Today is tomorrow.</p1>
 
+        <div class="ranking-form">
+            <h2>Submit Your Ranking</h2>
+            <p>Do you want to have a say in next week's puppy breed ranking?<br/>Complete the form below to send us your picks!</p>
+            <br/>
+            <div class="form-fields">
+                <form>
+                    <label for="breed1">Enter your first pick:</label>
+                    <input type="text"/>
+                        <br/>
+                        <br/>
+                    <label for="breed2">Enter your second pick:</label>
+                    <input type="text"/>
+                        <br/>
+                        <br/>
+                    <label for="breed3">Enter your third pick:</label>
+                    <input type="text"/>
+                        <br/>
+                        <br/>
+                    <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
+                    <input type="text" id="required" required pattern="PUPPY"/>
+                        <br/>
+                        <br/>
+                    <input type="submit"/>
+                </form>
+            </div>
+        </div>
+
         <script>
             // Get the div element by its ID
             const button = document.getElementById('myButton');
             const text = document.getElementById('textToChange');
-            const bg = document.getElementById('bg')
+            const bg = document.getElementById('bg');
+            const requiredField = document.getElementById('required');
 
+            // Counter logic
             let count = 0;
-
-            function myFunction(elem) {
+            function counter(elem) {
                 count++;
                 elem.innerHTML = count === 0 ? "Click me" : `Click me (x${count})`;
             }
+
+            // Required field alert logic
+            requiredField.onblur = function() {
+                if (!requiredField.value) {
+                    alert('Please fill out the confirmation field with PUPPY.');
+                }
+            };
 
             // Functions for button
             button.onclick = function(elem) {
@@ -42,7 +77,7 @@
                     bg.style.backgroundImage.includes("topo.png")
                         ? "url('media/dots.png')"
                         : "url('media/topo.png')";
-                myFunction(elem.target.querySelector('#buttonText'));
+                counter(elem.target.querySelector('#buttonText'));
                 
 
             }; // Show alert and change text on click
