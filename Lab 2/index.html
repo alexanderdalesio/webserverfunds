@@ -8,7 +8,7 @@
         <title>Lab 2</title>
     </head>
     <body>
-        <div class="bg-image"></div>
+        <div class="bg-image" id="bg"></div>
 
         <!--Create a create a div that looks like a button-->
         <div class="button" id="myButton">
@@ -17,16 +17,25 @@
         
         <!--Text that will change upon button press-->
         <p1 id="textToChange">Today is tomorrow.</p1>
-        
+
         <script>
             // Get the div element by its ID
             const button = document.getElementById('myButton');
             const text = document.getElementById('textToChange');
+            const bg = document.getElementById('bg')
 
             // Functions for button
             button.onclick = function() {
                 alert('Button Clicked!'); 
-                text.innerHTML = 'Yesterday is today.';
+                text.innerHTML =
+                    text.innerHTML === "Today is tomorrow."
+                        ? "Yesterday is today."
+                        : "Today is tomorrow.";
+                bg.style.backgroundImage = 
+                    bg.style.backgroundImage.includes("topo.png")
+                        ? "url('media/dots.png')"
+                        : "url('media/topo.png')";
+
             }; // Show alert and change text on click
             button.onmouseover = function() {button.style.backgroundColor = '#637AA8';}; // Make button lighter on hover
             button.onmouseout = function() {button.style.backgroundColor = '';}; // Restore original color on hover out
