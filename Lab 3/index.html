@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #b3c6e7, #6a85b6);
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+    }
+    #demo {
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 12px;
+      background: #5a7bb0;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 8px 12px rgba(90,123,176,0.25);
+      transition: background 0.3s, transform 0.2s;
+    }
+    #demo:hover {
+      background: #46608a;
+      transform: translateY(-2px) scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <button id="demo" onclick="getText('fetch_info.txt')">Button</button>
+
+  <script>
+    async function getText(file) {
+      try {
+        let myObject = await fetch(file);
+        if (!myObject.ok) throw new Error("File not found");
+        let myText = await myObject.text();
+        document.getElementById("demo").innerHTML = myText;
+      } catch (error) {
+        document.getElementById("demo").innerHTML = "Error: " + error.message;
+      }
+    }
+  </script>
+</body>
+</html>
