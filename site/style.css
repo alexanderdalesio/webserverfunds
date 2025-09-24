@@ -59,6 +59,8 @@ p1{
 }
 
 .form-fields {
+    margin-top: 15px;
     display: inline-block;
     text-align: center;
+    opacity: 50;
 }
