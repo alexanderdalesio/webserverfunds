@@ -45,9 +45,10 @@
             </div>
         </div>
 
-        <br> <br>
-        <h3>Your User Agent is:</h3>
-        <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
+        <div class="user-agent">
+            <h3>Your User Agent is</h3>
+            <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
+        <div>
 
         <script>
             // Get the div element by its ID
