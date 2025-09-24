@@ -45,7 +45,8 @@
             </div>
         </div>
 
-        <br> <br> <br> <br> <br>
+        <br> <br>
+        <h3>Your User Agent is:</h3>
         <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
 
         <script>
