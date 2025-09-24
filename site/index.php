@@ -18,10 +18,6 @@
         <!--Text that will change upon button press-->
         <p1 id="textToChange">Today is tomorrow.</p1>
 
-        <br>
-        <br>
-        <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
-
         <div class="ranking-form">
             <h2>Submit Your Ranking</h2>
             <p>Do you want to have a say in next week's puppy breed ranking?<br/>Complete the form below to send us your picks!</p>
@@ -48,6 +44,10 @@
                 </form>
             </div>
         </div>
+
+        <br>
+        <br>
+        <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
 
         <script>
             // Get the div element by its ID
