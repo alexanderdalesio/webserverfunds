@@ -60,7 +60,7 @@ p1{
 
 .user-agent {
     padding-top: 15px;
-    color: rgba(169, 177, 194, 0.176);
+    opacity: 0.5;
     display: inline-block;
     text-align: center;
 }
