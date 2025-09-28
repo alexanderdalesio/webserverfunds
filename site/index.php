@@ -23,7 +23,7 @@
             <p>Do you want to have a say in next week's puppy breed ranking?<br/>Complete the form below to send us your picks!</p>
             <br/>
             <div class="form-fields">
-                <form action="page.php" method="get">
+                <form action="page.php" method="post">
                     <label for="breed1">Enter your first pick:</label>
                     <input type="text" id="breed1" name="breed1"/>
                         <br/>
