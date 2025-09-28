@@ -23,7 +23,7 @@
             <p>Do you want to have a say in next week's puppy breed ranking?<br/>Complete the form below to send us your picks!</p>
             <br/>
             <div class="form-fields">
-                <form>
+                <form action="page.php" method="get">
                     <label for="breed1">Enter your first pick:</label>
                     <input type="text"/>
                         <br/>
@@ -44,6 +44,11 @@
                 </form>
             </div>
         </div>
+        
+        <br> <br>
+        <p>GET: <?= var_dump($_GET) ?></p>
+        <p>POST: <?= var_dump($_POST) ?></p>
+
 
         <div class="user-agent">
             <h3>Your User Agent is</h3>
