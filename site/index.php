@@ -25,19 +25,19 @@
             <div class="form-fields">
                 <form action="page.php" method="get">
                     <label for="breed1">Enter your first pick:</label>
-                    <input type="text"/>
+                    <input type="text" id="breed1" name="breed1"/>
                         <br/>
                         <br/>
                     <label for="breed2">Enter your second pick:</label>
-                    <input type="text"/>
+                    <input type="text" id="breed2" name="breed2"/>
                         <br/>
                         <br/>
                     <label for="breed3">Enter your third pick:</label>
-                    <input type="text"/>
+                    <input type="text" id="breed3" name="breed3"/>
                         <br/>
                         <br/>
                     <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
-                    <input type="text" id="required" required pattern="PUPPY"/>
+                    <input type="text" id="required" name="confirm" required pattern="PUPPY"/>
                         <br/>
                         <br/>
                     <input type="submit"/>
@@ -45,11 +45,6 @@
             </div>
         </div>
         
-        <br> <br>
-        <p>GET: <?= var_dump($_GET) ?></p>
-        <p>POST: <?= var_dump($_POST) ?></p>
-
-
         <div class="user-agent">
             <h3>Your User Agent is</h3>
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
