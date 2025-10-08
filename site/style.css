@@ -1,4 +1,4 @@
-body{
+body {
   color: #d5ddee;
   display:flex;
   flex-direction:column;
@@ -12,7 +12,7 @@ body{
   font-family:Arial, sans-serif;
 }
 
-.button{
+.button {
   position: relative;
   background:#4c5e81;
   color:#fff;
@@ -27,7 +27,7 @@ body{
   cursor: pointer;
 }
 
-p1{ 
+p1 { 
     margin: 10px;
     color: #a9b1c2;
 }
@@ -58,9 +58,133 @@ p1{
     text-align: left;
 }
 
+input[type="range"] {
+  accent-color: #8894af;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #8894af;
+  margin: 0 12px;
+}
+
+.divider h2 {
+  margin: 0;
+  padding: 0 16px;
+  color: #cdd2dc;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.divider-tight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.divider-tight::before,
+.divider-tight::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #8894af
+}
+
 .user-agent {
     padding-top: 15px;
     opacity: 0.3;
     display: inline-block;
     text-align: left;
+}
+
+#img1 { filter: drop-shadow(0px 0px 12px rgba(30, 30, 32, 0.6)); }
+#img2 { filter: drop-shadow(0px 0px 12px rgb(30, 30, 32, 0.6)); }
+#img3 { filter: drop-shadow(0px 0px 12px rgb(30, 30, 32, 0.6)); }
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-title {
+    padding-top: 150px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.summer-collection { text-align: center; }
+
+.rating { text-align: center; }
+
+.link-to-other {
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    background: #39475c;
+    padding: 20px;
+    width: 400px;
+    height: 80px;
+}
+
+h1 { 
+    font-size: 35px;
+    margin: 10px;
+    color: #dce0e8;
+}
+
+h2 { 
+    font-size: 22px;
+    margin: 10px;
+    color: #cdd2dc;
+}
+
+p2 { 
+    font-size: 22px;
+    margin: 10px;
+    color: #a9b1c2;
+}
+
+p3 { 
+    font-size: 15px;
+    margin: 10px;
+    color: #a9b1c2;
+}
+
+p4 { 
+    font-size: 20px;
+    margin: 10px;
+    color: #bfc5d1;
+}
+
+a {
+    color: #bfc5d1;
+}
+
+.header {
+  background-color: #2b3345;
+  height: 90px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }

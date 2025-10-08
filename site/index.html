@@ -4,87 +4,74 @@
         <!--Link to External CSS Sheet-->
         <link rel="stylesheet" href="style.css">
 
-        <!--Webpage Tab Name-->
-        <title>Lab 2</title>
-    </head>
-    <body>
-        <div class="bg-image" id="bg"></div>
+        <!--Webpage tab name-->
+        <title>puppies.com</title>
 
-        <!--Create a create a div that looks like a button-->
-        <div class="button" id="myButton">
-            <p id="buttonText">Click me</p>
+        <!--Header-->
+        <div class="header">
+            <p4><a href=index.html>Home</a></p4>
+            <p4> | </p4>
+            <p4><a href=rankings.php>Rankings</a></p4>
         </div>
+
+        <div class="page-title">
+            <!--Page title and description-->
+            <h1>Welcome to <u>puppies.com</u>!</h1>
+            <p2>The Internet's <i>favorite</i> collection of adorable puppy photos.</p2>
+        </div>
+
         
-        <!--Text that will change upon button press-->
-        <p1 id="textToChange">Today is tomorrow.</p1>
-
-        <div class="ranking-form">
-            <h2>Submit Your Ranking</h2>
-            <p>Do you want to have a say in next week's puppy breed ranking?<br/>Complete the form below to send us your picks!</p>
+    </head>
+    <body style="background-color: #f0f0ff">
+        <!--Photo Montage-->
+        <div class="summer-collection">
             <br/>
-            <div class="form-fields">
-                <form>
-                    <label for="breed1">Enter your first pick:</label>
-                    <input type="text"/>
-                        <br/>
-                        <br/>
-                    <label for="breed2">Enter your second pick:</label>
-                    <input type="text"/>
-                        <br/>
-                        <br/>
-                    <label for="breed3">Enter your third pick:</label>
-                    <input type="text"/>
-                        <br/>
-                        <br/>
-                    <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
-                    <input type="text" id="required" required pattern="PUPPY"/>
-                        <br/>
-                        <br/>
-                    <input type="submit"/>
-                </form>
+            <br/>
+            <br/>
+            <br/>
+            <div class="divider">
+                <h2>Summer Collection</h2>
             </div>
+            <table class="center">
+                <!--Images Row-->
+                <tr>
+                    <th><img id="img1" src=media/landing/summer_pup1.jpg style="width:500px;height:325px;"></th>
+                    <th><img id="img2" src=media/landing/summer_pup2.jpg style="width:500px;height:325px;"></th>
+                    <th><img id="img3" src=media/landing/summer_pup3.jpg style="width:425px;height:325px;"></th>
+                </tr>
+                <!--Sources Row-->
+                <tr>
+                    <td><a href="https://www.caninecountryclubaz.com/blog/easy-tips-to-get-your-pet-ready-for-the-summer/" target="_blank">Source</a></td>
+                    <td><a href="https://www.petlandtexas.com/10-summer-must-haves-for-your-puppy/" target="_blank">Source</a></td>
+                    <td><a href="https://www.thethreetomatoes.com/summer-dog-safety-101" target="_blank">Source</a></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <div class="divider-tight"></div>
         </div>
-
-        <br> <br> <br> <br> <br>
-        <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
-
-        <script>
-            // Get the div element by its ID
-            const button = document.getElementById('myButton');
-            const text = document.getElementById('textToChange');
-            const bg = document.getElementById('bg');
-            const requiredField = document.getElementById('required');
-
-            // Counter logic
-            let count = 0;
-            function counter(elem) {
-                count++;
-                elem.innerHTML = count === 0 ? "Click me" : `Click me (x${count})`;
-            }
-
-            // Required field alert logic
-            requiredField.onblur = function() {
-                if (!requiredField.value) {
-                    alert('Please fill out the confirmation field with PUPPY.');
-                }
-            };
-
-            // Functions for button
-            button.onclick = function(elem) {
-                alert('Button Clicked!'); 
-                text.innerHTML =
-                    text.innerHTML === "Today is tomorrow."
-                        ? "Yesterday is today."
-                        : "Today is tomorrow.";
-                bg.style.backgroundImage = 
-                    bg.style.backgroundImage.includes("topo.png")
-                        ? "url('media/dots.png')"
-                        : "url('media/topo.png')";
-                counter(elem.target.querySelector('#buttonText'));
-
-            }; // Show alert and change text on click
-            button.onmouseover = function() {button.style.backgroundColor = '#637AA8';}; // Make button lighter on hover
-            button.onmouseout = function() {button.style.backgroundColor = '';}; // Restore original color on hover out
-        </script>
+        <br/>
+        <br/>
+        <br>
+        <br>
+        <!--Photo rating slider-->
+        <div class="rating">
+            <h2>Rate this week's collection</h2>
+            <input type="range" min="1" max="10" value="5" class="slider" id="rating-slider">
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <!--Link to Other page-->
+        <div class="link-to-other">
+            <h2>Want more puppy content?</h2>
+            <p3>Check out our <a href=rankings.php>puppy breed rankings of the week</a>!</p3>
+        </div>
+        <br>
+        <br>
+        <br>
     </body>
 </html>

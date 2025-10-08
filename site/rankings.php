@@ -5,10 +5,19 @@
         <link rel="stylesheet" href="style.css">
 
         <!--Webpage Tab Name-->
-        <title>Lab 2</title>
+        <title>Puppy Rankings</title>
+
+        <!--Header-->
+        <div class="header">
+            <p4><a href=index.html>Home</a></p4>
+            <p4> | </p4>
+            <p4><a href=rankings.php>Rankings</a></p4>
+        </div>
     </head>
     <body>
         <div class="bg-image" id="bg"></div>
+
+        <br> <br> <Br> <Br> <Br> <Br> <br> <br>
 
         <!--Create a create a div that looks like a button-->
         <div class="button" id="myButton">
@@ -16,7 +25,9 @@
         </div>
         
         <!--Text that will change upon button press-->
-        <p1 id="textToChange">Today is tomorrow.</p1>
+        <p1 id="textToChange">Puppies are great!</p1>
+
+        <br> <Br>
 
         <div class="ranking-form">
             <h2>Submit Your Ranking</h2>
@@ -45,6 +56,8 @@
             </div>
         </div>
         
+        <br> <br>
+
         <div class="user-agent">
             <h3>Your User Agent is</h3>
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
@@ -75,9 +88,9 @@
             button.onclick = function(elem) {
                 alert('Button Clicked!'); 
                 text.innerHTML =
-                    text.innerHTML === "Today is tomorrow."
-                        ? "Yesterday is today."
-                        : "Today is tomorrow.";
+                    text.innerHTML === "Puppies are great!"
+                        ? "100x cuter than kittens."
+                        : "Puppies are great!";
                 bg.style.backgroundImage = 
                     bg.style.backgroundImage.includes("topo.png")
                         ? "url('media/dots.png')"
