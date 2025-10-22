@@ -6,100 +6,92 @@
 
         <!--Webpage Tab Name-->
         <title>Puppy Rankings</title>
-
-        <!--Header-->
-        <div class="header">
-            <p4><a href="index.html" class="alt">Home</a></p4>
-            <p4> | </p4>
-            <p4><a href="rankings.php" class="alt">Rankings</a></p4>
-        </div>
     </head>
     <body>
-        <div class="bg-image" id="bg"></div>
+        <!--Header-->
+        <div class="header">
+            <div class="links">
+                <p4><a href="index.html" class="alt">Home</a></p4>
+                <p4> | </p4>
+                <p4><a href="rankings.php" class="alt">Rankings</a></p4>
+            </div>
 
-        <br> <br> <Br> <Br> <Br> <Br> <br> <br>
+            <div class="logo">
+                <h3>puppies.com</h3>
+            </div>
 
-        <!--Create a create a div that looks like a button-->
-        <div class="button" id="myButton">
-            <p id="buttonText">Click me</p>
-        </div>
-        
-        <!--Text that will change upon button press-->
-        <p1 id="textToChange">Puppies are great!</p1>
-
-        <br> <Br>
-
-        <div class="ranking-form">
-            <h2>Submit Your Ranking</h2>
-            <p>Do you want to have a say in next week's puppy breed ranking?<br/>Complete the form below to send us your picks!</p>
-            <br/>
-            <div class="form-fields">
-                <form action="page.php" method="post">
-                    <label for="breed1">Enter your first pick:</label>
-                    <input type="text" id="breed1" name="breed1"/>
-                        <br/>
-                        <br/>
-                    <label for="breed2">Enter your second pick:</label>
-                    <input type="text" id="breed2" name="breed2"/>
-                        <br/>
-                        <br/>
-                    <label for="breed3">Enter your third pick:</label>
-                    <input type="text" id="breed3" name="breed3"/>
-                        <br/>
-                        <br/>
-                    <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
-                    <input type="text" id="required" name="confirm" required pattern="PUPPY"/>
-                        <br/>
-                        <br/>
-                    <input type="submit"/>
-                </form>
+            <!--Create a create a div that looks like a button-->
+            <div class="button" id="myButton">
+                <p id="buttonText"></p>
             </div>
         </div>
-        
-        <br> <br>
+
+        <div class="bg-image" id="bg"></div>
+
+            <!-- Better than placing 8 consecutive breaks -->
+            <div class="pad1">
+                <p> </p>
+            </div>
+
+        <table class="rank-layout">
+            <tr>
+                <td>
+                <div class="ranks">
+                    <h2>Rankings for the week of August 25th</h2>
+                    <br>
+                    <div class="list">
+                    <ol>
+                        <li>Cavaliers</li>
+                        <li>Goldendoodles</li>
+                        <li>Shiba Inus</li>
+                        <p><i>Honourable Mention</i></p>
+                        <li>Labrador Retrievers</li>
+                    </ol>
+                    </div>
+                </div>
+                </td>
+
+                <td>
+                <div class="ranking-form">
+                    <h2>Submit Your Ranking</h2>
+                    <p>
+                    Do you want to have a say in next week's puppy breed ranking?<br/>
+                    Complete the form below to send us your picks!
+                    </p>
+                    <br/>
+                    <div class="form-fields">
+                    <form action="page.php" method="post">
+                        <label for="breed1">Enter your first pick:</label>
+                        <input type="text" id="breed1" name="breed1"/>
+                        <br/><br/>
+
+                        <label for="breed2">Enter your second pick:</label>
+                        <input type="text" id="breed2" name="breed2"/>
+                        <br/><br/>
+
+                        <label for="breed3">Enter your third pick:</label>
+                        <input type="text" id="breed3" name="breed3"/>
+                        <br/><br/>
+
+                        <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
+                        <input type="text" id="required" name="confirm" required pattern="PUPPY"/>
+                        <br/><br/>
+
+                        <input type="submit"/>
+                    </form>
+                    </div>
+                </div>
+                </td>
+            </tr>
+            </table>
+
+        </div>
 
         <div class="user-agent">
-            <h3>Your User Agent is</h3>
+            <h4>Your User Agent is</h4>
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
         <div>
 
-        <script>
-            // Get the div element by its ID
-            const button = document.getElementById('myButton');
-            const text = document.getElementById('textToChange');
-            const bg = document.getElementById('bg');
-            const requiredField = document.getElementById('required');
-
-            // Counter logic
-            let count = 0;
-            function counter(elem) {
-                count++;
-                elem.innerHTML = count === 0 ? "Click me" : `Click me (x${count})`;
-            }
-
-            // Required field alert logic
-            requiredField.onblur = function() {
-                if (!requiredField.value) {
-                    alert('Please fill out the confirmation field with PUPPY.');
-                }
-            };
-
-            // Functions for button
-            button.onclick = function(elem) {
-                alert('Button Clicked!'); 
-                text.innerHTML =
-                    text.innerHTML === "Puppies are great!"
-                        ? "100x cuter than kittens."
-                        : "Puppies are great!";
-                bg.style.backgroundImage = 
-                    bg.style.backgroundImage.includes("topo.png")
-                        ? "url('media/dots.png')"
-                        : "url('media/topo.png')";
-                counter(elem.target.querySelector('#buttonText'));
-
-            }; // Show alert and change text on click
-            button.onmouseover = function() {button.style.backgroundColor = '#637AA8';}; // Make button lighter on hover
-            button.onmouseout = function() {button.style.backgroundColor = '';}; // Restore original color on hover out
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
