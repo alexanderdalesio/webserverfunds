@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 body {
   color: #d5ddee;
   display:flex;
@@ -9,7 +11,7 @@ body {
   margin:0;
   background: #232d3d;
   background: linear-gradient(0deg, rgba(35, 45, 61, 1) 0%, rgba(48, 62, 87, 1) 52%, rgba(51, 66, 92, 1) 100%);
-  font-family:Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .button {
@@ -134,14 +136,19 @@ td, th {
 .link-to-other {
     text-align: center;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 25px;
     background: #39475c;
     padding: 20px;
-    width: 400px;
-    height: 80px;
+    width: 475px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
 
 h1 { 
+    padding-top: 40px;
     font-size: 35px;
     margin: 10px;
     color: #dce0e8;
@@ -167,24 +174,32 @@ p3 {
 
 p4 { 
     font-size: 20px;
-    margin: 10px;
-    color: #bfc5d1;
+    margin: 15px;
+    color: #39475c;
+    font-weight: 400;
 }
 
-a {
-    color: #bfc5d1;
+a { color: #bfc5d1; }
+
+a.alt {
+  color: #39475c; 
+  text-decoration: none;
 }
 
 .header {
-  background-color: #2b3345;
-  height: 90px;
-  width: 100%;
+  background-color: rgba(236, 242, 255, 0.5);
+  height: 100px;
   text-align: left;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   padding-left: 20px;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
