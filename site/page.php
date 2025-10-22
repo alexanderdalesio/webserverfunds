@@ -17,7 +17,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connected successfully<br>";
+echo "✅ Connected successfully<br>";
 
 $breed1 = htmlspecialchars($_POST['breed1']);
 $breed2 = htmlspecialchars($_POST['breed2']);
@@ -30,8 +30,8 @@ $sql = "INSERT INTO rankings (breed1, breed2, breed3, confirm)
 $result = mysqli_query($conn, $sql);
 
 echo $result 
-    ? "Data inserted successfully.<br>"
-    : "Error inserting data: " . mysqli_error($conn);
+    ? "✅ Data inserted successfully.<br>"
+    : "❌ Error inserting data: " . mysqli_error($conn);
 
 mysqli_close($conn);
 ?>
