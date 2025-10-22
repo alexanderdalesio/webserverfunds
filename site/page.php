@@ -6,7 +6,7 @@
 <p>And lastly: <?= htmlspecialchars($_POST['breed3']) ?></p>
 <p>You successfully confirmed your submission by entering: <?= htmlspecialchars($_POST['confirm']) ?></p>
 
-<!-- Database (puppiesDB -->
+<!-- Database (puppiesDB) -->
 <?php
 $server = "localhost";
 $username = "php";
