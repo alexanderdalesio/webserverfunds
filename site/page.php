@@ -17,7 +17,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "✅ Connected 333333<br>";
+echo "✅ Connected successfully<br>";
 
 $breed1 = htmlspecialchars($_POST['breed1']);
 $breed2 = htmlspecialchars($_POST['breed2']);
