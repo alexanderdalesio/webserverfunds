@@ -17,7 +17,8 @@ body {
 .button {
   position: relative;
   background:#5c7099;
-  color:#dce0e8;
+  color:#e7eaf0;
+  text-decoration-color: #e7eaf0;
   padding:10px 20px;
   border:none;
   opacity: 65%;
@@ -45,7 +46,7 @@ p1 {
     .bg-image.alt{ background-image: url('media/bones.png'); }
     background-size: contain;
     filter: brightness(0) invert(1);
-    opacity: 0.025;
+    opacity: 0.02;
     z-index: -1;
     scale: 1.3;
     pointer-events: none;
@@ -53,7 +54,7 @@ p1 {
 
 .pad1 { 
     padding-top: 20px;
-    padding-bottom: 170px;
+    padding-bottom: 140px;
 }
 
 .ranks {
@@ -132,6 +133,10 @@ input[type="range"] {
 #img2 { filter: drop-shadow(0px 0px 12px rgb(30, 30, 32, 0.6)); }
 #img3 { filter: drop-shadow(0px 0px 12px rgb(30, 30, 32, 0.6)); }
 
+#img1, #img2, #img3 {
+  filter: saturate(0.65);
+}
+
 td, th {
     text-align: left;
     padding: 8px;
@@ -149,8 +154,8 @@ td, th {
 }
 
 .summer-collection {
-  width: calc(100% - 40px);
-  margin: 0 20px;
+  width: calc(100% - 350px);
+  margin: 0 175px;
   position: relative;
   top: 50px;
 }
@@ -191,7 +196,7 @@ h2 {
 
 h3 {
   font-size: 28px;
-  color: #10141b;
+  color: #132139;
   opacity: 45%;
 }
 
@@ -222,7 +227,7 @@ a.alt {
 }
 
 .header {
-  background-color: rgba(237, 240, 248, 0.454);
+  background-color: rgba(237, 240, 248, 0.608);
   height: 89px;
   text-align: left;
   border-radius: 25px;
@@ -276,4 +281,40 @@ a.alt {
   margin: 0 30px;
   border-collapse: separate;
   border-spacing: 40px;
+}
+
+html {
+  filter: saturate(1.65);
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.form-info {
+  width: calc(100% - 350px);
+  margin: 200px auto 0 auto;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-info h2,
+.form-info p {
+  width: 100%;
+  max-width: 600px;
+}
+
+.debug {
+  text-align: center;
+  font-size: 14px;
+  color: #a9b1c2;
+  padding-top: 200px;
+  width: 100%;
+  max-width: 600px;
+  line-height: 2;
 }

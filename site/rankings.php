@@ -37,15 +37,13 @@
             <tr>
                 <td>
                 <div class="ranks">
-                    <h2>Rankings for the week of August 25th</h2>
+                    <h2>Rankings for the week of October 20th</h2>
                     <br>
                     <div class="list">
                     <ol>
                         <li>Cavaliers</li>
                         <li>Goldendoodles</li>
                         <li>Shiba Inus</li>
-                        <p><i>Honourable Mention</i></p>
-                        <li>Labrador Retrievers</li>
                     </ol>
                     </div>
                 </div>
