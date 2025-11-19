@@ -5,7 +5,12 @@ const toggleButton = document.getElementById('toggleButton');
 const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
+const requiredField = document.getElementById('required');
 
+console.log('myButton:', button);
+console.log('onButton:', onButton);
+console.log('offButton:', offButton);
+console.log('toggleButton:', toggleButton);
 
 // Start with BG1
 let bgState = 1;
@@ -27,6 +32,7 @@ button.onclick = function() {
 
 // Hover effect for main button
 button.onmouseover = function() {
+    console.log('HOVER ON');
     button.style.backgroundColor = '#4f6184ff';
 };
 button.onmouseout = function() {
@@ -35,6 +41,7 @@ button.onmouseout = function() {
 
 // Hover effect for ON button
 onButton.onmouseover = function() {
+    console.log('HOVER ON');
     onButton.style.backgroundColor = '#4f6184ff';
 };
 onButton.onmouseout = function() {
@@ -43,6 +50,7 @@ onButton.onmouseout = function() {
 
 // Hover effect for OFF button
 offButton.onmouseover = function() {
+    console.log('HOVER ON');
     offButton.style.backgroundColor = '#4f6184ff';
 };
 offButton.onmouseout = function() {
@@ -51,6 +59,7 @@ offButton.onmouseout = function() {
 
 // Hover effect for TOGGLE button
 toggleButton.onmouseover = function() {
+    console.log('HOVER ON');
     toggleButton.style.backgroundColor = '#4f6184ff';
 };
 toggleButton.onmouseout = function() {
@@ -58,8 +67,10 @@ toggleButton.onmouseout = function() {
 };
 
 // Required field alert logic
-requiredField.onblur = function() {
-    if (!requiredField.value) {
-        alert('Please fill out the confirmation field with PUPPY.');
-    }
-};
+if (requiredField) {
+    requiredField.onblur = function() {
+        if (!requiredField.value) {
+            alert('Please fill out the confirmation field with PUPPY.');
+        }
+    };
+}
