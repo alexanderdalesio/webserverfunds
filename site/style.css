@@ -127,7 +127,7 @@ input[type="range"] {
   left: 30px;
   right: 30px;
   padding: 10px 20px;
-  top: 60px;
+  bottom: 60px;
   opacity: 0.3;
   z-index: 999;
   line-height: 1;
