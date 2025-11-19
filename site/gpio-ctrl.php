@@ -59,6 +59,20 @@
                     </td>
                 </tr>
             </table>
+
+            <table class="sensor-values">
+                <tr>
+                    <td>
+                        <p><b>Temperature:</b></p>
+                    </td>
+                    <td>
+                        <p><b>Humidity:</b></p>
+                    </td>
+                    <td>
+                        <p><b>Pressure:</b></p>
+                    </td>
+                </tr>
+            </table>
             <div class="divider-tight"></div>
         </div>
         
