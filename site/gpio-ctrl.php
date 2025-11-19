@@ -35,58 +35,6 @@
                 <p> </p>
             </div>
 
-        <table class="rank-layout">
-            <tr>
-                <td>
-                <div class="ranks">
-                    <h2>Rankings for the week of November 17th</h2>
-                    <br>
-                    <div class="list">
-                    <ol>
-                        <li>Cavaliers</li>
-                        <li>Goldendoodles</li>
-                        <li>Shiba Inus</li>
-                    </ol>
-                    </div>
-                </div>
-                </td>
-
-                <td>
-                <div class="ranking-form">
-                    <h2>Submit Your Ranking</h2>
-                    <p>
-                    Do you want to have a say in next week's puppy breed ranking?<br/>
-                    Complete the form below to send us your picks!
-                    </p>
-                    <br/>
-                    <div class="form-fields">
-                    <form action="results.php" method="post">
-                        <label for="breed1">Enter your first pick:</label>
-                        <input type="text" id="breed1" name="breed1"/>
-                        <br/><br/>
-
-                        <label for="breed2">Enter your second pick:</label>
-                        <input type="text" id="breed2" name="breed2"/>
-                        <br/><br/>
-
-                        <label for="breed3">Enter your third pick:</label>
-                        <input type="text" id="breed3" name="breed3"/>
-                        <br/><br/>
-
-                        <label for="confirm">Enter <b>PUPPY</b> to confirm your picks:</label>
-                        <input type="text" id="required" name="confirm" required pattern="PUPPY"/>
-                        <br/><br/>
-
-                        <input type="submit"/>
-                    </form>
-                    </div>
-                </div>
-                </td>
-            </tr>
-            </table>
-
-        </div>
-
         <div class="gpio-control">
             <div class="divider">
                 <h2>GPIO Control Panel</h2>
