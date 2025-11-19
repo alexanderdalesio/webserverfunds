@@ -354,13 +354,13 @@ a.alt {
 .sensor-values tr {
   justify-content: left;
   gap: 25px;
-  line-height: 0.2;
+  line-height: 0.1;
 }
 
 .sensor-values td {
   text-align: left;
   vertical-align: middle;
-  line-height: 0.2;
+  line-height: 0.1;
 }
 
 html {
