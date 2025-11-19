@@ -93,17 +93,17 @@
                 <tr>
                     <td>
                         <div class="gpio-button" id="onButton">
-                            <p id="On"></p>
+                            <p>On</p>
                         </div>
                     </td>
                     <td>
                         <div class="gpio-button" id="offButton">
-                            <p id="Off"></p>
+                            <p>Off</p>
                         </div>
                     </td>
                     <td>
                         <div class="gpio-button" id="toggleButton">
-                            <p id="Toggle"></p>
+                            <p>Toggle</p>
                         </div>
                     </td>
                 </tr>
