@@ -354,14 +354,14 @@ a.alt {
 .sensor-values tr {
   justify-content: left;
   gap: 5px;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .sensor-values td {
   text-align: left;
   vertical-align: middle;
   padding: 0px 6px;
-  line-height: 1;
+  line-height: 1.8;
 }
 
 html {
@@ -370,7 +370,7 @@ html {
 
 li {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .form-info {
