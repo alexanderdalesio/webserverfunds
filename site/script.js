@@ -5,6 +5,7 @@ const button = document.getElementById('myButton');
 const onButton = document.getElementById('onButton');
 const offButton = document.getElementById('offButton');
 const toggleButton = document.getElementById('toggleButton');
+const requiredField = document.getElementById('required');
 
 // Start with BG1
 let bgState = 1;
