@@ -300,7 +300,6 @@ a.alt {
 .gpio-buttons td {
   text-align: center;
   vertical-align: top;
-  display: flex;
 }
 
 .rank-layout {
