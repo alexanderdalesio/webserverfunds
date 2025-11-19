@@ -312,7 +312,6 @@ a.alt {
 
 .gpio-buttons {
   width: 30px;
-  margin: 0 15px;
   border-collapse: separate;
   border-spacing: 15px;
 }
@@ -354,5 +353,5 @@ li {
 }
 
 .gpio-control {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
