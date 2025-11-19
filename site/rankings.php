@@ -90,7 +90,6 @@
                 <h2>GPIO Control Panel</h2>
             </div>
             <p>Use the buttons below to control the GPIO pins on the server</p>
-            <br/>
             <table class="gpio-buttons">
                 <tr>
                     <td>
