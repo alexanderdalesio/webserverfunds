@@ -353,14 +353,14 @@ a.alt {
 
 .sensor-values tr {
   justify-content: left;
-  gap: 25px;
-  line-height: 0.02;
+  gap: 5px;
+  line-height: 1;
 }
 
 .sensor-values td {
   text-align: left;
   vertical-align: middle;
-  line-height: 0.02;
+  line-height: 1;
 }
 
 html {
