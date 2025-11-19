@@ -86,7 +86,6 @@
         </div>
 
         <div class="user-agent">
-            <h4>Your User Agent is</h4>
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
         <div>
 
