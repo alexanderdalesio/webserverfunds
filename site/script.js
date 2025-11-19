@@ -38,8 +38,14 @@ requiredField.onblur = function() {
 
 // Upadting date variables for Rankings page
 const date = new Date();
+
+const monthNames = [
+  "January","February","March","April","May","June",
+  "July","August","September","October","November","December"
+];
+
+const month = monthNames[date.getMonth()];
 const day = date.getDate();
-const month = date.getMonth() + 1;
 
 document.getElementById("ranking-date").textContent =
-  `Rankings for the week of ${month}/${day}`;
+  `Rankings for the week of ${month} ${day}`;
