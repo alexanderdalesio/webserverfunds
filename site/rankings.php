@@ -37,7 +37,7 @@
             <tr>
                 <td>
                 <div class="ranks">
-                    <h2>Rankings for the week of October 20th</h2>
+                    <h2 id="ranking-date"></h2>
                     <br>
                     <div class="list">
                     <ol>
