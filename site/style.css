@@ -123,9 +123,9 @@ input[type="range"] {
 
 .user-agent {
     position: fixed;
-    bottom: 10;
-    left: 50;
-    right: 50;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     padding-top: 80px;
     opacity: 0.3;
