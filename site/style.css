@@ -355,11 +355,13 @@ a.alt {
   display: flex;
   justify-content: left;
   gap: 25px;
+  line-height: 1;
 }
 
 .sensor-values td {
   text-align: left;
   vertical-align: middle;
+  line-height: 1;
 }
 
 html {

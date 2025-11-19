@@ -68,7 +68,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <p class="sensor-value"><b>Humidit</b>:</p>
+                        <p class="sensor-value"><b>Humidity</b>:</p>
                     </td>
                 </tr>
                 <tr>    
