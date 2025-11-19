@@ -68,7 +68,7 @@ toggleButton.onmouseout = function() {
 
 async function sendGPIO(action) {
     try {
-        const response = await fetch(`gpio.php?action=${action}`);
+        const response = await fetch(`gpio-ctrl.php?action=${action}`);
         const result = await response.text();
     } catch (err) {
         console.error("GPIO error:", err);
