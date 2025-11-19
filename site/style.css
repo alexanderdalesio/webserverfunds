@@ -297,11 +297,6 @@ a.alt {
   vertical-align: top;
 }
 
-.gpio-buttons td {
-  text-align: center;
-  vertical-align: top;
-}
-
 .rank-layout {
   width: calc(100% - 60px);
   margin: 0 30px;
@@ -311,12 +306,20 @@ a.alt {
 }
 
 .gpio-buttons {
-  width: 30px;
   border-collapse: separate;
   border-spacing: 15px;
+  margin: 0 auto;
+}
+
+.gpio-buttons tr {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 25px;
+}
+
+.gpio-buttons td {
+  text-align: center;
+  vertical-align: middle;
 }
 
 html {
