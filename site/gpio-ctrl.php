@@ -65,9 +65,13 @@
                     <td>
                         <p><b>Temperature:</b></p>
                     </td>
+                </tr>
+                <tr>
                     <td>
                         <p><b>Humidity:</b></p>
                     </td>
+                </tr>
+                <tr>    
                     <td>
                         <p><b>Pressure:</b></p>
                     </td>
