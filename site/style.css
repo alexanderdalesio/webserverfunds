@@ -353,7 +353,7 @@ a.alt {
 
 .sensor-values tr {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 25px;
 }
 
