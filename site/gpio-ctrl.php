@@ -23,9 +23,8 @@ else if ($action === "toggle") {
     echo "GPIO toggled";
 }
 
-else { 
-    echo "no action"; 
-}
+else { }
+
 ?>
 
 <!DOCTYPE html>
