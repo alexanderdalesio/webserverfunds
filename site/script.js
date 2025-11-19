@@ -1,11 +1,8 @@
+const onButton = document.getElementById('myButton');
 const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
-const button = document.getElementById('myButton');
-const onButton = document.getElementById('onButton');
-const offButton = document.getElementById('offButton');
-const toggleButton = document.getElementById('toggleButton');
-const requiredField = document.getElementById('required');
+
 
 // Start with BG1
 let bgState = 1;
@@ -26,20 +23,12 @@ button.onclick = function() {
 };
 
 // Hover effects
-function addHoverEffect(btn) {
-    btn.onmouseover = function() {
-        btn.style.backgroundColor = '#4f6184ff';
-    };
-    btn.onmouseout = function() {
-        btn.style.backgroundColor = '';
-    };
-}
-
-// Apply hover effect to all buttons
-addHoverEffect(button);
-addHoverEffect(onButton);
-addHoverEffect(offButton);
-addHoverEffect(toggleButton);
+onButton.onmouseover = function() {
+    onButton.style.backgroundColor = '#4f6184ff';
+};
+onButton.onmouseout = function() {
+    onButton.style.backgroundColor = '';
+};
 
 // Required field alert logic
 requiredField.onblur = function() {
