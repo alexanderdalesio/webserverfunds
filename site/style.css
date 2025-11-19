@@ -51,6 +51,7 @@ body {
 }
 
 .refresh-button {
+  padding-top: 15px;
   position: relative;
   background:#5c7099;
   color:#e7eaf0;
@@ -58,14 +59,14 @@ body {
   padding:10px 20px;
   border:none;
   opacity: 100%;
-  border-radius:15px;
+  border-radius:10px;
   display:flex;
   align-items:center;
   box-shadow: 0 0 10px rgba(rgb(hsla(220, 25%, 48%, 0.313)));
   height:20px;
   margin:0;
   cursor: pointer;
-  width: 125px;
+  width: 200px;
   justify-content: center;
 }
 
