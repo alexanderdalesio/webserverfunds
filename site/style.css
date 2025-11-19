@@ -259,23 +259,36 @@ a.alt {
 }
 
 .header {
-  background-color: rgba(237, 240, 248, 0.608);
-  height: 89px;
-  text-align: left;
-  border-radius: 25px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  align-items: center;
-  padding-left: 20px;
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  right: 30px;
-  z-index: 1000;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(237, 240, 248, 0.608);
+    height: 89px;
+    border-radius: 25px;
+    padding: 0 20px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* This forces the logo to be centered in the header regardless of other items */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    pointer-events: none; /* so clicks pass through if needed */
+}
+
+.links, 
+.button {
+    position: relative;
+    z-index: 2; /* keep them clickable above the logo */
 }
 
 #bg {
