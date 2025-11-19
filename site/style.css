@@ -50,6 +50,11 @@ body {
   justify-content: center;
 }
 
+.gpio-button {
+  transition: ease-in-out 0.2s;
+
+}
+
 p1 { 
     margin: 10px;
     color: #a9b1c2;
@@ -153,7 +158,6 @@ input[type="range"] {
   right: 30px;
   padding: 10px 20px;
   opacity: 0.3;
-  z-index: 999;
   line-height: 1;
 }
 
