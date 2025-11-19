@@ -46,6 +46,7 @@ body {
   height:30px;
   margin:0;
   cursor: pointer;
+  width: 30px;
 }
 
 p1 { 
@@ -299,6 +300,9 @@ a.alt {
 .gpio-buttons td {
   text-align: center;
   vertical-align: top;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .rank-layout {
