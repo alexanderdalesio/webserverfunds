@@ -300,6 +300,7 @@ a.alt {
 .gpio-buttons td {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .rank-layout {
