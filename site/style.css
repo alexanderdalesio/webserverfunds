@@ -364,20 +364,20 @@ a.alt {
   border-collapse: separate;
   border-spacing: 5px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .sensor-values tr {
   justify-content: left;
   gap: 5px;
-  line-height: 0.2;
+  line-height: 0.1;
 }
 
 .sensor-values td {
   text-align: left;
   vertical-align: middle;
   padding: 0px 6px;
-  line-height: 0.2;
+  line-height: 0.1;
 }
 
 html {
