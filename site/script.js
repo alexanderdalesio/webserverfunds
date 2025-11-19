@@ -1,4 +1,4 @@
-const onButton = document.getElementById('onButton');
+const button = document.getElementById('onButton');
 const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
@@ -23,11 +23,11 @@ button.onclick = function() {
 };
 
 // Hover effects
-onButton.onmouseover = function() {
-    onButton.style.backgroundColor = '#4f6184ff';
+button.onmouseover = function() {
+    button.style.backgroundColor = '#4f6184ff';
 };
-onButton.onmouseout = function() {
-    onButton.style.backgroundColor = '';
+button.onmouseout = function() {
+    button.style.backgroundColor = '';
 };
 
 // Required field alert logic
