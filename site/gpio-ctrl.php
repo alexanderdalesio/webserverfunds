@@ -60,6 +60,11 @@
                 </tr>
             </table>
 
+            <!-- Better than placing 8 consecutive breaks -->
+            <div class="pad1">
+                <p> </p>
+            </div>
+
             <table class="sensor-values">
                 <tr>
                     <td>
