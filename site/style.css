@@ -348,6 +348,7 @@ a.alt {
 .sensor-values {
   border-collapse: separate;
   border-spacing: 5px;
+  margin: 0 auto;
 }
 
 .sensor-values tr {
