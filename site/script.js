@@ -1,3 +1,4 @@
+const refreshButton = document.getElementById('refreshButton');
 const button = document.getElementById('myButton');
 const onButton = document.getElementById('onButton');
 const offButton = document.getElementById('offButton');
@@ -64,6 +65,15 @@ toggleButton.onmouseover = function() {
 };
 toggleButton.onmouseout = function() {
     toggleButton.style.backgroundColor = '';
+};
+
+// Hover effect for REFRESH button
+refreshButton.onmouseover = function() {
+    console.log('HOVER ON');
+    refreshButton.style.backgroundColor = '#4f6184ff';
+};
+refreshButton.onmouseout = function() {
+    refreshButton.style.backgroundColor = '';
 };
 
 async function sendGPIO(action) {

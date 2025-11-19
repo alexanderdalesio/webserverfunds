@@ -107,6 +107,13 @@ else { }
                         <p class="sensor-value"><b>Pressure</b>:</p>
                     </td>
                 </tr>
+                <tr>    
+                    <td>
+                        <div class="refresh-button" id="refreshButton">
+                            <p>Refresh</p>
+                        </div>
+                    </td>
+                </tr>
             </table>
             <div class="divider-tight"></div>
         </div>
