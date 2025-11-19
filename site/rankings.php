@@ -85,6 +85,31 @@
 
         </div>
 
+        <div class="gpio-control">
+            <h2>GPIO Control Panel</h2>
+            <p>Use the buttons below to control the GPIO pins on the server.</p>
+            <br/>
+            <table class="gpio-buttons">
+                <tr>
+                    <td>
+                        <div class="on-button" id="onButton">
+                            <p id="On"></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="off-button" id="offButton">
+                            <p id="Off"></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle-button" id="toggleButton">
+                            <p id="Toggle"></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
         <div class="user-agent">
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
         <div>
