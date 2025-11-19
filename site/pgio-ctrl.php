@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="style.css">
 
         <!--Webpage Tab Name-->
-        <title>Puppy Rankings</title>
+        <title>GPIO Control</title>
     </head>
     <body>
         <!--Header-->

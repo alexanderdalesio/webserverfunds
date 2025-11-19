@@ -15,6 +15,8 @@
                     <p4><a href="index.html" class="alt">Home</a></p4>
                     <p4> | </p4>
                     <p4><a href="rankings.php" class="alt">Rankings</a></p4>
+                    <p4> | </p4>
+                    <p4><a href="gpio-ctrl.php" class="alt">GPIO Control</a></p4>
                 </div>
 
                 <div class="logo">
