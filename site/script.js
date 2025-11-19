@@ -66,6 +66,20 @@ toggleButton.onmouseout = function() {
     toggleButton.style.backgroundColor = '';
 };
 
+async function sendGPIO(action) {
+    try {
+        const response = await fetch(`gpio.php?action=${action}`);
+        const result = await response.text();
+    } catch (err) {
+        console.error("GPIO error:", err);
+    }
+}
+
+// Button actions
+onButton.onclick = () => sendGPIO("on");
+offButton.onclick = () => sendGPIO("off");
+toggleButton.onclick = () => sendGPIO("toggle");
+
 // Required field alert logic
 if (requiredField) {
     requiredField.onblur = function() {
