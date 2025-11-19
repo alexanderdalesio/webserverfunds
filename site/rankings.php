@@ -86,7 +86,9 @@
         </div>
 
         <div class="gpio-control">
-            <h2>GPIO Control Panel</h2>
+            <div class="divider">
+                <h2>GPIO Control Panel</h2>
+            </div>
             <p>Use the buttons below to control the GPIO pins on the server</p>
             <br/>
             <table class="gpio-buttons">
@@ -108,6 +110,7 @@
                     </td>
                 </tr>
             </table>
+            <div class="divider-tight"></div>
         </div>
         
         <div class="user-agent">
