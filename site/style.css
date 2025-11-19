@@ -122,6 +122,11 @@ input[type="range"] {
 }
 
 .user-agent {
+    position: fixed;
+    bottom: 10;
+    left: 50;
+    right: 50;
+    width: 100%;
     padding-top: 80px;
     opacity: 0.3;
     display: inline-block;
