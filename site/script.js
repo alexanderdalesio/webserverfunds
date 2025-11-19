@@ -2,6 +2,7 @@ const button = document.getElementById('myButton');
 const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
+const gpioButtons = document.querySelectorAll('.gpio-button');
 
 // Start with BG1
 let bgState = 1;
@@ -28,6 +29,15 @@ button.onmouseover = function() {
 button.onmouseout = function() {
     button.style.backgroundColor = '';
 };
+
+gpioButtons.forEach(btn => {
+    btn.onmouseover = function() {
+        btn.style.backgroundColor = '#4f6184ff';
+    };
+    btn.onmouseout = function() {
+        btn.style.backgroundColor = '';
+    };
+});
 
 // Required field alert logic
 requiredField.onblur = function() {
