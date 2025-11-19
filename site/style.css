@@ -298,8 +298,8 @@ a.alt {
 }
 
 .gpio-buttons td {
-  text-align: center;
-  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rank-layout {
