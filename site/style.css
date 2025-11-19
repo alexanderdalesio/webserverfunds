@@ -349,7 +349,7 @@ a.alt {
   border-collapse: separate;
   border-spacing: 5px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 200px;
 }
 
 .sensor-values tr {
@@ -403,5 +403,5 @@ li {
 
 .gpio-control {
   margin-bottom: 100px;
-  padding-bottom: 180px;
+  padding-bottom: 160px;
 }
