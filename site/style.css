@@ -354,7 +354,7 @@ a.alt {
 .sensor-values tr {
   display: flex;
   justify-content: left;
-  gap: 25px;
+  gap: 5px;
   line-height: 1;
 }
 
