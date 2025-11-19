@@ -51,7 +51,7 @@ body {
 }
 
 .refresh-button {
-  padding-top: 150px;
+  margin-top: 40px;
   position: relative;
   background:#5c7099;
   color:#e7eaf0;
