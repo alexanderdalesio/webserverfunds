@@ -298,9 +298,8 @@ a.alt {
 }
 
 .gpio-buttons td {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  vertical-align: top;
 }
 
 .rank-layout {
@@ -315,6 +314,9 @@ a.alt {
   width: 30px;
   border-collapse: separate;
   border-spacing: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 html {
