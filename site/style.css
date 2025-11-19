@@ -354,10 +354,6 @@ li {
   line-height: 2;
 }
 
-.gpio-buttons {
-  padding-bottom: 40px; /* small controlled space */
-}
-
-.gpio-control p {
-  margin-bottom: 20px;
+.gpio-control {
+  margin-bottom: 40px;
 }
