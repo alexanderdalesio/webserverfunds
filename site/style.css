@@ -311,10 +311,10 @@ a.alt {
 }
 
 .gpio-buttons {
-  width: calc(100% - 60px);
-  margin: 0 30px;
+  width: 30px;
+  margin: 0 15px;
   border-collapse: separate;
-  border-spacing: 40px;
+  border-spacing: 15px;
 }
 
 html {
