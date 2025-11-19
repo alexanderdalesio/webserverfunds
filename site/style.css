@@ -360,7 +360,7 @@ a.alt {
 .sensor-values td {
   text-align: left;
   vertical-align: middle;
-  padding: 50px 6px;
+  padding: 0px 6px;
   line-height: 0.2;
 }
 
