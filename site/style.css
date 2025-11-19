@@ -139,7 +139,6 @@ input[type="range"] {
 }
 
 .user-agent {
-  position: fixed;
   text-align: center;
   bottom: 30px;
   left: 30px;
