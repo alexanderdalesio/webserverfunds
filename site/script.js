@@ -1,8 +1,10 @@
-const button = document.getElementById('myButton');
 const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
-const gpioButtons = document.getElementById('gpio-button');
+const button = document.getElementById('myButton');
+const onButton = document.getElementById('onButton');
+const offButton = document.getElementById('offButton');
+const toggleButton = document.getElementById('toggleButton');
 
 // Start with BG1
 let bgState = 1;
@@ -23,19 +25,20 @@ button.onclick = function() {
 };
 
 // Hover effects
-button.onmouseover = function() {
-    button.style.backgroundColor = '#4f6184ff';
-};
-button.onmouseout = function() {
-    button.style.backgroundColor = '';
-};
+function addHoverEffect(btn) {
+    btn.onmouseover = function() {
+        btn.style.backgroundColor = '#4f6184ff';
+    };
+    btn.onmouseout = function() {
+        btn.style.backgroundColor = '';
+    };
+}
 
-gpio-button.onmouseover = function() {
-    gpio-button.style.backgroundColor = '#4f6184ff';
-};
-gpio-button.onmouseout = function() {
-    gpio-button.style.backgroundColor = '';
-};
+// Apply hover effect to all buttons
+addHoverEffect(button);
+addHoverEffect(onButton);
+addHoverEffect(offButton);
+addHoverEffect(toggleButton);
 
 // Required field alert logic
 requiredField.onblur = function() {
