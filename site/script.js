@@ -35,3 +35,11 @@ requiredField.onblur = function() {
         alert('Please fill out the confirmation field with PUPPY.');
     }
 };
+
+// Upadting date variables for Rankings page
+const date = new Date();
+const day = date.getDate();
+const month = date.getMonth() + 1;
+
+document.getElementById("ranking-date").textContent =
+  `Rankings for the week of ${month}/${day}`;
