@@ -12,13 +12,13 @@ console.log('onButton:', onButton);
 console.log('offButton:', offButton);
 console.log('toggleButton:', toggleButton);
 
-// Start BG1
+// Start with BG1
 let bgState = 1;
 bg.style.backgroundImage = "url('media/paws.png')";
 buttonText.innerHTML = "Change Background";
 
-// Toggle backgrounds
-button.onclick = function () {
+// Toggle backgrounds on click
+button.onclick = function() {
     if (bgState === 1) {
         bg.style.backgroundImage = "url('media/bones.png')";
         buttonText.innerHTML = "Background 2";
@@ -30,23 +30,45 @@ button.onclick = function () {
     }
 };
 
-// Hover: main button
-button.onmouseover = () => button.style.backgroundColor = '#4f6184ff';
-button.onmouseout  = () => button.style.backgroundColor = '';
+// Hover effect for main button
+button.onmouseover = function() {
+    console.log('HOVER ON');
+    button.style.backgroundColor = '#4f6184ff';
+};
+button.onmouseout = function() {
+    button.style.backgroundColor = '';
+};
 
-// Hover: GPIO buttons
-onButton.onmouseover = () => onButton.style.backgroundColor = '#4f6184ff';
-onButton.onmouseout  = () => onButton.style.backgroundColor = '';
+// Hover effect for ON button
+onButton.onmouseover = function() {
+    console.log('HOVER ON');
+    onButton.style.backgroundColor = '#4f6184ff';
+};
+onButton.onmouseout = function() {
+    onButton.style.backgroundColor = '';
+};
 
-offButton.onmouseover = () => offButton.style.backgroundColor = '#4f6184ff';
-offButton.onmouseout  = () => offButton.style.backgroundColor = '';
+// Hover effect for OFF button
+offButton.onmouseover = function() {
+    console.log('HOVER ON');
+    offButton.style.backgroundColor = '#4f6184ff';
+};
+offButton.onmouseout = function() {
+    offButton.style.backgroundColor = '';
+};
 
-toggleButton.onmouseover = () => toggleButton.style.backgroundColor = '#4f6184ff';
-toggleButton.onmouseout  = () => toggleButton.style.backgroundColor = '';
+// Hover effect for TOGGLE button
+toggleButton.onmouseover = function() {
+    console.log('HOVER ON');
+    toggleButton.style.backgroundColor = '#4f6184ff';
+};
+toggleButton.onmouseout = function() {
+    toggleButton.style.backgroundColor = '';
+};
 
-// Required field (ONLY if it exists on the page)
+// Required field alert logic
 if (requiredField) {
-    requiredField.onblur = function () {
+    requiredField.onblur = function() {
         if (!requiredField.value) {
             alert('Please fill out the confirmation field with PUPPY.');
         }
