@@ -63,17 +63,17 @@
             <table class="sensor-values">
                 <tr>
                     <td>
-                        <p class="sensor-value"><b>Temperature:</b></p>
+                        <p class="sensor-value"><b>Temperature</b>:</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p class="sensor-value"><b>Humidity:</b></p>
+                        <p class="sensor-value"><b>Humidit</b>:</p>
                     </td>
                 </tr>
                 <tr>    
                     <td>
-                        <p class="sensor-value"><b>Pressure:</b></p>
+                        <p class="sensor-value"><b>Pressure</b>:</p>
                     </td>
                 </tr>
             </table>
