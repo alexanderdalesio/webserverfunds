@@ -345,6 +345,23 @@ a.alt {
   vertical-align: middle;
 }
 
+.sensor-values {
+  border-collapse: separate;
+  border-spacing: 15px;
+  margin: 0 auto;
+}
+
+.sensor-values tr {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sensor-values td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 html {
   filter: saturate(1.65);
 }
