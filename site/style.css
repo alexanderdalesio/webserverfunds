@@ -276,19 +276,18 @@ a.alt {
     align-items: center;
 }
 
-/* This forces the logo to be centered in the header regardless of other items */
 .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    pointer-events: none; /* so clicks pass through if needed */
+    pointer-events: none;
 }
 
 .links, 
 .button {
     position: relative;
-    z-index: 2; /* keep them clickable above the logo */
+    z-index: 2;
 }
 
 #bg {
@@ -326,7 +325,7 @@ a.alt {
   margin: 0 30px;
   border-collapse: separate;
   border-spacing: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .gpio-buttons {
@@ -384,4 +383,5 @@ li {
 
 .gpio-control {
   margin-bottom: 100px;
+  padding-bottom: 200px;
 }
