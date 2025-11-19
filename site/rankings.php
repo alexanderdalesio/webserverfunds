@@ -110,7 +110,7 @@
                     </td>
                 </tr>
             </table>
-            <div class="divider-tight"></div>
+            <div class="divider-tight"> </div>
         </div>
         
         <div class="user-agent">
