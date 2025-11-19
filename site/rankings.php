@@ -115,7 +115,7 @@
         
         <div class="user-agent">
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
-        <div>
+        </div>
 
         <script src="script.js"></script>
     </body>
