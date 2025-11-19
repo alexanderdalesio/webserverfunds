@@ -1,4 +1,4 @@
-const onButton = document.getElementById('myButton');
+const onButton = document.getElementById('onButton');
 const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
