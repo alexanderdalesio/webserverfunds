@@ -99,24 +99,28 @@ else { }
                     <td>
                         <p2 class="sensor-value"><b>Temperature</b>:</p2>
                         <p2 class="sensor-value" id="temperature-value">?</p2>
+                        <p2 class="sensor-value">°C</p2>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <p2 class="sensor-value"><b>Humidity</b>:</p2>
                         <p2 class="sensor-value" id="humidity-value">?</p2>
+                        <p2 class="sensor-value">%</p2>
                     </td>
                 </tr>
                 <tr>    
                     <td>
                         <p2 class="sensor-value"><b>Pressure</b>:</p2>
                         <p2 class="sensor-value" id="pressure-value">?</p2>
+                        <p2 class="sensor-value">hPa</p2>
                     </td>
                 </tr>
                 <tr>    
                     <td>
                         <p2 class="sensor-value"><b>Altitude</b>:</p2>
                         <p2 class="sensor-value" id="altitude-value">?</p2>
+                        <p2 class="sensor-value">m</p2>
                     </td>
                 </tr>
                 <tr>    

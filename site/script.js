@@ -110,7 +110,6 @@ async function readSensor(action) {
     try {
         const response = await fetch(`gpio.php?action=${action}`);
         const data = await response.json();
-        console.log(data);
         const { temperature, humidity, pressure, altitude } = data;
 
         return { temperature, humidity, pressure, altitude };
@@ -125,7 +124,6 @@ refreshButton.onclick = async function () {
     const { temperature, humidity, pressure, altitude } = await readSensor("read");
 
     temperature_.innerHTML = temperature;
-    console.log("TEMP:", temperature);
     humidity_.innerHTML = humidity;
     pressure_.innerHTML = pressure;
     altitude_.innerHTML = altitude;
