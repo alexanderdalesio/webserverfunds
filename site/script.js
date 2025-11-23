@@ -8,6 +8,13 @@ const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
 const requiredField = document.getElementById('required');
 
+// Sensor data-related
+const refresh = document.getElementById('refreshButton');
+const temperature = document.getElementById('temperature-value');
+const humidity = document.getElementById('humidity-value');
+const pressure = document.getElementById('pressure-value');
+const altitude = document.getElementById('altitude-value');
+
 console.log('myButton:', button);
 console.log('onButton:', onButton);
 console.log('offButton:', offButton);
@@ -105,8 +112,20 @@ async function readSensor(action) {
         const response = await fetch(`gpio.php?action=${action}`);
         const data = await response.json();
         console.log(data);
-        return data;
-    } catch (err) {
+        const { temperature, humidity, pressure, altitude } = data;
+        return { temperature, humidity, pressure, altitude };
+    } 
+    catch (err) {
         console.error("Error reading sensor data:", err);
     }
 }
+
+// Refresh sensor data values displayed
+refresh.onclick = async function () {
+    const { temperature, humidity, pressure, altitude } = await readSensor("read");
+    
+    temperature.innerHTML = temperature;
+    humidity.innerHTML = humidity;
+    pressure.innerHTML = pressure;
+    altitude.innerHTML = altitude;
+};

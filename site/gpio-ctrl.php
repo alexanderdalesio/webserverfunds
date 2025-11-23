@@ -112,6 +112,11 @@ else { }
                 </tr>
                 <tr>    
                     <td>
+                        <p2 class="sensor-value"><b>Altitude</b>:</p2>
+                    </td>
+                </tr>
+                <tr>    
+                    <td>
                         <div class="refresh-button" id="refreshButton">
                             <p>Refresh</p>
                         </div>
