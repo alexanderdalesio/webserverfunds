@@ -123,10 +123,10 @@ async function readSensor(action) {
 
 // Refresh sensor data values displayed
 refresh.onclick = async function () {
-    const { temperature, humidity, pressure, altitude } = await readSensor("read");
+    const { t, h, p, a } = await readSensor("read");
 
-    temperature_.innerHTML = temperature;
-    humidity_.innerHTML = humidity;
-    pressure_.innerHTML = pressure;
-    altitude_.innerHTML = altitude;
+    temperature_.innerHTML = t;
+    humidity_.innerHTML = h;
+    pressure_.innerHTML = p;
+    altitude_.innerHTML = a;
 };
