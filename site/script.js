@@ -98,3 +98,15 @@ if (requiredField) {
         }
     };
 }
+
+// Read sensor data
+async function readSensor(action) {
+    try {
+        const response = await fetch(`gpio.php?action=${action}`);
+        const data = await response.json();
+        console.log(data);
+        return data;
+    } catch (err) {
+        console.error("Error reading sensor data:", err);
+    }
+}
