@@ -381,7 +381,8 @@ a.alt {
 }
 
 .sensor-value {
-  word-spacing: 50px;
+    display: inline;
+    margin-right: 2px;
 }
 
 html {
