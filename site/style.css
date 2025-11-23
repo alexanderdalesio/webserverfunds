@@ -365,7 +365,6 @@ a.alt {
   border-spacing: 5px;
   margin: 0 auto;
   padding-bottom: 10px;
-  min-width: 225px;
 }
 
 .sensor-values tr {
@@ -379,6 +378,7 @@ a.alt {
   vertical-align: middle;
   padding: 0px 6px;
   line-height: 1.4;
+  width: 200px;
 }
 
 .sensor-value {
