@@ -97,17 +97,17 @@ else { }
             <table class="sensor-values">
                 <tr>
                     <td>
-                        <p class="sensor-value"><b>Temperature</b>:</p>
+                        <p2 class="sensor-value"><b>Temperature</b>:</p2>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p class="sensor-value"><b>Humidity</b>:</p>
+                        <p2 class="sensor-value"><b>Humidity</b>:</p2>
                     </td>
                 </tr>
                 <tr>    
                     <td>
-                        <p class="sensor-value"><b>Pressure</b>:</p>
+                        <p2 class="sensor-value"><b>Pressure</b>:</p2>
                     </td>
                 </tr>
                 <tr>    
