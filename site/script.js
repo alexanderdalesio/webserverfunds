@@ -1,4 +1,3 @@
-const refreshButton = document.getElementById('refreshButton');
 const button = document.getElementById('myButton');
 const onButton = document.getElementById('onButton');
 const offButton = document.getElementById('offButton');
@@ -9,7 +8,7 @@ const buttonText = document.getElementById('buttonText');
 const requiredField = document.getElementById('required');
 
 // Sensor data-related
-const refresh = document.getElementById('refreshButton');
+const refreshButton = document.getElementById('refreshButton');
 const temperature_ = document.getElementById('temperature-value');
 const humidity_ = document.getElementById('humidity-value');
 const pressure_ = document.getElementById('pressure-value');
@@ -110,42 +109,24 @@ if (requiredField) {
 async function readSensor(action) {
     try {
         const response = await fetch(`gpio.php?action=${action}`);
-        const text = await response.text();
-        console.log("RAW SENSOR RESPONSE:", text);
-
-        const data = JSON.parse(text);
-        console.log("PARSED SENSOR JSON:", data);
-
+        const data = await response.json();
+        console.log(data);
         const { temperature, humidity, pressure, altitude } = data;
+
         return { temperature, humidity, pressure, altitude };
-    } catch (err) {
+    } 
+    catch (err) {
         console.error("Error reading sensor data:", err);
-        return null;
     }
 }
 
 // Refresh sensor data values displayed
-console.log("refresh element at bind time:", refresh);
+refreshButton.onclick = async function () {
+    const { temperature, humidity, pressure, altitude } = await readSensor("read");
 
-if (refresh) {
-    refresh.onclick = async function () {
-        console.log("REFRESH CLICKED");
-
-        const data = await readSensor("read");
-        if (!data) {
-            console.warn("No sensor data returned");
-            return;
-        }
-
-        const { temperature, humidity, pressure, altitude } = data;
-
-        console.log("TEMP:", temperature);
-
-        temperature_.textContent = temperature;
-        humidity_.textContent = humidity;
-        pressure_.textContent = pressure;
-        altitude_.textContent = altitude;
-    };
-} else {
-    console.warn("No element with id 'refreshButton' found on this page.");
-}
+    temperature_.innerHTML = temperature;
+    console.log("TEMP:", temperature);
+    humidity_.innerHTML = humidity;
+    pressure_.innerHTML = pressure;
+    altitude_.innerHTML = altitude;
+};
