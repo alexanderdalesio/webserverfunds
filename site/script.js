@@ -110,24 +110,42 @@ if (requiredField) {
 async function readSensor(action) {
     try {
         const response = await fetch(`gpio.php?action=${action}`);
-        const data = await response.json();
-        console.log(data);
-        const { temperature, humidity, pressure, altitude } = data;
+        const text = await response.text();
+        console.log("RAW SENSOR RESPONSE:", text);
 
+        const data = JSON.parse(text);
+        console.log("PARSED SENSOR JSON:", data);
+
+        const { temperature, humidity, pressure, altitude } = data;
         return { temperature, humidity, pressure, altitude };
-    } 
-    catch (err) {
+    } catch (err) {
         console.error("Error reading sensor data:", err);
+        return null;
     }
 }
 
 // Refresh sensor data values displayed
-refresh.onclick = async function () {
-    const { temperature, humidity, pressure, altitude } = await readSensor("read");
+console.log("refresh element at bind time:", refresh);
 
-    temperature_.innerHTML = temperature;
-    console.log("TEMP:", temperature);
-    humidity_.innerHTML = humidity;
-    pressure_.innerHTML = pressure;
-    altitude_.innerHTML = altitude;
-};
+if (refresh) {
+    refresh.onclick = async function () {
+        console.log("REFRESH CLICKED");
+
+        const data = await readSensor("read");
+        if (!data) {
+            console.warn("No sensor data returned");
+            return;
+        }
+
+        const { temperature, humidity, pressure, altitude } = data;
+
+        console.log("TEMP:", temperature);
+
+        temperature_.textContent = temperature;
+        humidity_.textContent = humidity;
+        pressure_.textContent = pressure;
+        altitude_.textContent = altitude;
+    };
+} else {
+    console.warn("No element with id 'refreshButton' found on this page.");
+}
