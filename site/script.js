@@ -10,10 +10,10 @@ const requiredField = document.getElementById('required');
 
 // Sensor data-related
 const refresh = document.getElementById('refreshButton');
-const temperature = document.getElementById('temperature-value');
-const humidity = document.getElementById('humidity-value');
-const pressure = document.getElementById('pressure-value');
-const altitude = document.getElementById('altitude-value');
+const temperature_ = document.getElementById('temperature-value');
+const humidity_ = document.getElementById('humidity-value');
+const pressure_ = document.getElementById('pressure-value');
+const altitude_ = document.getElementById('altitude-value');
 
 console.log('myButton:', button);
 console.log('onButton:', onButton);
@@ -113,6 +113,7 @@ async function readSensor(action) {
         const data = await response.json();
         console.log(data);
         const { temperature, humidity, pressure, altitude } = data;
+
         return { temperature, humidity, pressure, altitude };
     } 
     catch (err) {
@@ -123,9 +124,9 @@ async function readSensor(action) {
 // Refresh sensor data values displayed
 refresh.onclick = async function () {
     const { temperature, humidity, pressure, altitude } = await readSensor("read");
-    
-    temperature.innerHTML = temperature;
-    humidity.innerHTML = humidity;
-    pressure.innerHTML = pressure;
-    altitude.innerHTML = altitude;
+
+    temperature_.innerHTML = temperature;
+    humidity_.innerHTML = humidity;
+    pressure_.innerHTML = pressure;
+    altitude_.innerHTML = altitude;
 };
