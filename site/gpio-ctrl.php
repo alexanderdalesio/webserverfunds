@@ -97,25 +97,25 @@ else { }
             <table class="sensor-values">
                 <tr>
                     <td>
-                        <p2 class="sensor-value" id="temperature-value"><b>Temperature</b>: </p2>
+                        <p2 class="sensor-value" id="temperature-value"><b>Temperature</b>:</p2>
                         <p2 class="sensor-value" id="temperature-value">?</p2>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p2 class="sensor-value" id="humidity-value"><b>Humidity</b>: </p2>
+                        <p2 class="sensor-value" id="humidity-value"><b>Humidity</b>:</p2>
                         <p2 class="sensor-value" id="humidity-value">?</p2>
                     </td>
                 </tr>
                 <tr>    
                     <td>
-                        <p2 class="sensor-value"><b>Pressure</b>: </p2>
+                        <p2 class="sensor-value"><b>Pressure</b>:</p2>
                         <p2 class="sensor-value" id="pressure-value">?</p2>
                     </td>
                 </tr>
                 <tr>    
                     <td>
-                        <p2 class="sensor-value"><b>Altitude</b>: </p2>
+                        <p2 class="sensor-value"><b>Altitude</b>:</p2>
                         <p2 class="sensor-value" id="altitude-value">?</p2>
                     </td>
                 </tr>
