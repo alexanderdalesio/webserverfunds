@@ -369,6 +369,7 @@ a.alt {
 
 .sensor-values tr {
   justify-content: left;
+  width: 100px;
   gap: 5px;
   line-height: 1.4;
 }
