@@ -99,13 +99,11 @@ if (requiredField) {
     };
 }
 
-// Dog Facts API Example
-const facts = await fetch('https://kinduff.github.io/dog-api/', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json'
-    }
-});
-
-const data = await facts.json();
-console.log(data);
+fetch('https://api.thedogapi.com/v1/breeds')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Dog Breeds:', data);
+  })
+  .catch(error => {
+    console.error('Error fetching data from The Dog API:', error);
+  });
