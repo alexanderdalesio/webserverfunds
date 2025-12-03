@@ -370,14 +370,20 @@ a.alt {
 .sensor-values tr {
   justify-content: left;
   gap: 5px;
-  line-height: 0.1;
+  line-height: 1.4;
 }
 
 .sensor-values td {
   text-align: left;
   vertical-align: middle;
   padding: 0px 6px;
-  line-height: 0.1;
+  line-height: 1.4;
+  width: 250px;
+}
+
+.sensor-value {
+    display: inline;
+    margin-right: -5px;
 }
 
 html {

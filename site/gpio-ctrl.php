@@ -9,16 +9,19 @@ $conn = mysqli_connect($server, $username, $password, $database);
 $action = $_GET['action'] ?? null;
 
 if ($action === "on") {
+    shell_exec("gpio mode 7 out");
     shell_exec("gpio write 7 1");
     echo "GPIO turned ON";
 }
 
 else if ($action === "off") {
+    shell_exec("gpio mode 7 out");
     shell_exec("gpio write 7 0");
     echo "GPIO turned OFF";
 }
 
 else if ($action === "toggle") {
+    shell_exec("gpio mode 7 out");
     shell_exec("gpio toggle 7");
     echo "GPIO toggled";
 }
@@ -94,17 +97,30 @@ else { }
             <table class="sensor-values">
                 <tr>
                     <td>
-                        <p class="sensor-value"><b>Temperature</b>:</p>
+                        <p2 class="sensor-value"><b>Temperature</b>:</p2>
+                        <p2 class="sensor-value" id="temperature-value">?</p2>
+                        <p2 class="sensor-value">°C</p2>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p class="sensor-value"><b>Humidity</b>:</p>
+                        <p2 class="sensor-value"><b>Humidity</b>:</p2>
+                        <p2 class="sensor-value" id="humidity-value">?</p2>
+                        <p2 class="sensor-value">%</p2>
                     </td>
                 </tr>
                 <tr>    
                     <td>
-                        <p class="sensor-value"><b>Pressure</b>:</p>
+                        <p2 class="sensor-value"><b>Pressure</b>:</p2>
+                        <p2 class="sensor-value" id="pressure-value">?</p2>
+                        <p2 class="sensor-value">hPa</p2>
+                    </td>
+                </tr>
+                <tr>    
+                    <td>
+                        <p2 class="sensor-value"><b>Altitude</b>:</p2>
+                        <p2 class="sensor-value" id="altitude-value">?</p2>
+                        <p2 class="sensor-value">m</p2>
                     </td>
                 </tr>
                 <tr>    
