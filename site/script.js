@@ -1,3 +1,4 @@
+const refreshButton = document.getElementById('refreshButton');
 const button = document.getElementById('myButton');
 const onButton = document.getElementById('onButton');
 const offButton = document.getElementById('offButton');
@@ -6,13 +7,6 @@ const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
 const requiredField = document.getElementById('required');
-
-// Sensor data-related
-const refreshButton = document.getElementById('refreshButton');
-const temperature_ = document.getElementById('temperature-value');
-const humidity_ = document.getElementById('humidity-value');
-const pressure_ = document.getElementById('pressure-value');
-const altitude_ = document.getElementById('altitude-value');
 
 console.log('myButton:', button);
 console.log('onButton:', onButton);
@@ -105,7 +99,6 @@ if (requiredField) {
     };
 }
 
-<<<<<<< HEAD
 // Dog Facts API Example
 const facts = await fetch('https://kinduff.github.io/dog-api/', {
     method: 'GET',
@@ -116,28 +109,3 @@ const facts = await fetch('https://kinduff.github.io/dog-api/', {
 
 const data = await facts.json();
 console.log(data);
-=======
-// Read sensor data
-async function readSensor(action) {
-    try {
-        const response = await fetch(`gpio.php?action=${action}`);
-        const data = await response.json();
-        const { temperature, humidity, pressure, altitude } = data;
-
-        return { temperature, humidity, pressure, altitude };
-    } 
-    catch (err) {
-        console.error("Error reading sensor data:", err);
-    }
-}
-
-// Refresh sensor data values displayed
-refreshButton.onclick = async function () {
-    const { temperature, humidity, pressure, altitude } = await readSensor("read");
-
-    temperature_.innerHTML = temperature;
-    humidity_.innerHTML = humidity;
-    pressure_.innerHTML = pressure;
-    altitude_.innerHTML = altitude;
-};
->>>>>>> e2ac43a005826e56864fefeba53c0c7371a88cee
