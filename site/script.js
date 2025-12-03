@@ -99,11 +99,11 @@ if (requiredField) {
     };
 }
 
-fetch('https://api.thedogapi.com/v1/breeds')
+fetch('https://dog-api.kinduff.com/api/facts')
   .then(response => response.json())
   .then(data => {
-    console.log('Dog Breeds:', data);
+    console.log('Random Dog Fact:', data.facts[0]);
   })
   .catch(error => {
-    console.error('Error fetching data from The Dog API:', error);
+    console.error('Error fetching dog fact:', error);
   });
