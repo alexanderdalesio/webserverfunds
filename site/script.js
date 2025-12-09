@@ -13,6 +13,17 @@ console.log('onButton:', onButton);
 console.log('offButton:', offButton);
 console.log('toggleButton:', toggleButton);
 
+window.onload = function() {
+    fetch('https://dog-api.kinduff.com/api/facts')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Random Dog Fact:', data.facts[0]);
+  })
+  .catch(error => {
+    console.error('Error fetching dog fact:', error);
+  });
+};
+
 // Start with BG1
 let bgState = 1;
 bg.style.backgroundImage = "url('media/paws.png')";
@@ -99,15 +110,3 @@ toggleButton.onclick = () => sendGPIO("toggle");
 //         }
 //     };
 // }
-
-
-window.onload = function() {
-    fetch('https://dog-api.kinduff.com/api/facts')
-  .then(response => response.json())
-  .then(data => {
-    console.log('Random Dog Fact:', data.facts[0]);
-  })
-  .catch(error => {
-    console.error('Error fetching dog fact:', error);
-  });
-};
