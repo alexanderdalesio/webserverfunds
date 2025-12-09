@@ -6,8 +6,7 @@
 
         <!--Webpage tab name-->
         <title>puppies.com</title>
-    </head>
-    <body style="background-color: #f0f0ff">
+
         <!--Header-->
         <div class="header">
             <div class="links">
@@ -15,20 +14,11 @@
                 <p4> | </p4>
                 <p4><a href="rankings.php" class="alt">Rankings</a></p4>
                 <p4> | </p4>
-                <p4><a href="gpio-ctrl.php" class="alt">GPIO Control</a></p4>
-            </div>
-
-            <div class="logo">
-                <h3>puppies.com</h3>
-            </div>
-
-            <!--Create a create a div that looks like a button-->
-            <div class="button" id="myButton">
-                <p id="buttonText"></p>
+                <p4><a href="gpio-ctrl.php" class="alt">GPIO</a></p4>
+                <p4> | </p4>
+                <p4><a href="facts.php" class="alt">Facts</a></p4>
             </div>
         </div>
-
-         <div class="bg-image" id="bg"></div>
 
         <div class="page-title">
             <!--Page title and description-->
@@ -36,17 +26,23 @@
             <p2>The Internet's <i>favorite</i> collection of adorable puppy photos.</p2>
         </div>
 
+    </head>
+    <body style="background-color: #f0f0ff">
         <!--Photo Montage-->
         <div class="summer-collection">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div class="divider">
                 <h2>Summer Collection</h2>
             </div>
             <table class="center">
                 <!--Images Row-->
                 <tr>
-                    <th><img id="img1" src=media/landing/summer_pup1.jpg></th>
-                    <th><img id="img2" src=media/landing/summer_pup2.jpg></th>
-                    <th><img id="img3" src=media/landing/summer_pup3.jpg></th>
+                    <th><img id="img1" src=media/landing/summer_pup1.jpg style="width:500px;height:325px;"></th>
+                    <th><img id="img2" src=media/landing/summer_pup2.jpg style="width:500px;height:325px;"></th>
+                    <th><img id="img3" src=media/landing/summer_pup3.jpg style="width:425px;height:325px;"></th>
                 </tr>
                 <!--Sources Row-->
                 <tr>
@@ -55,22 +51,32 @@
                     <td><a href="https://www.thethreetomatoes.com/summer-dog-safety-101" target="_blank">Source</a></td>
                 </tr>
             </table>
+            <br>
+            <br>
+            <br>
             <div class="divider-tight"></div>
         </div>
-
+        <br/>
+        <br/>
+        <br>
+        <br>
+        <!--Photo rating slider-->
+        <div class="rating">
+            <h2>Rate this week's collection</h2>
+            <input type="range" min="1" max="10" value="5" class="slider" id="rating-slider">
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <!--Link to Other page-->
         <div class="link-to-other">
-            <h2 style="text-align:left;">
-                Want more puppy content?
-            </h2>
-            <p3 style="text-align:right;">
-                Check out our <a href=rankings.php>puppy breed rankings of the week</a>!
-            </p3>
+            <h2>Want more puppy content?</h2>
+            <p3>Check out our <a href=rankings.php>puppy breed rankings of the week</a>!</p3>
         </div>
         <br>
         <br>
         <br>
-
-        <script src="script.js"></script>
     </body>
 </html>
