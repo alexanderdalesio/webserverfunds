@@ -92,13 +92,13 @@ offButton.onclick = () => sendGPIO("off");
 toggleButton.onclick = () => sendGPIO("toggle");
 
 // Required field alert logic
-if (requiredField) {
-    requiredField.onblur = function() {
-        if (!requiredField.value) {
-            alert('Please fill out the confirmation field with PUPPY.');
-        }
-    };
-}
+// if (requiredField) {
+//     requiredField.onblur = function() {
+//         if (!requiredField.value) {
+//             alert('Please fill out the confirmation field with PUPPY.');
+//         }
+//     };
+// }
 
 fetch('https://dog-api.kinduff.com/api/facts')
   .then(response => response.json())
