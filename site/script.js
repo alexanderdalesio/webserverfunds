@@ -14,7 +14,7 @@ console.log('offButton:', offButton);
 console.log('toggleButton:', toggleButton);
 
 window.onload = function() {
-    fetch('https://dog-api.kinduff.com/api/facts')
+    fetch('https://dogapi.dog/api/v1/facts?number=1')
   .then(response => response.json())
   .then(data => {
     console.log('Random Dog Fact:', data.facts[0]);
