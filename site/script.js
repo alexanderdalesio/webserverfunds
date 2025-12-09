@@ -8,6 +8,7 @@ const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
 const requiredField = document.getElementById('required');
 const dogFact = document.getElementById('fact');
+const factTimer = document.getElementById('fact-timer');
 
 console.log('myButton:', button);
 console.log('onButton:', onButton);
@@ -26,6 +27,29 @@ window.onload = function() {
     dogFact.innerHTML = error;
   });
 };
+
+// 10-second countdown for next fact
+let countdown = 10;
+
+setInterval(() => {
+    countdown--; // Count down by 1
+    if (countdown < 0) {
+        countdown = 10;     // Reset countdown
+        fetch('https://dogapi.dog/api/v1/facts?number=1')       // Fetch new dog fact
+      .then(response => response.json())
+        .then(data => {
+            console.log('Random Dog Fact:', data.facts[0]);
+            dogFact.innerHTML = data.facts[0];
+        })
+        .catch(error => {
+            console.error('Error fetching dog fact:', error);
+            dogFact.innerHTML = error;
+        });
+    }
+    factTimer.innerHTML = countdown;
+}, 1000);
+
+factTimer.innerHTML = countdown;
 
 // Start with BG1
 let bgState = 1;

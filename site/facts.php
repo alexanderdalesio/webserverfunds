@@ -40,6 +40,7 @@
         <div class="facts">
             <h2>Did you know?</h2>
             <p id="fact"></p>
+            <p1><i>Next fact loads in </i></p1> <p1 id="fact-timer"><i></i></p1>
         </div>        
         
         <div class="user-agent">
