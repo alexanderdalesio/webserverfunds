@@ -100,7 +100,9 @@ toggleButton.onclick = () => sendGPIO("toggle");
 //     };
 // }
 
-fetch('https://dog-api.kinduff.com/api/facts')
+
+window.onload = function() {
+    fetch('https://dog-api.kinduff.com/api/facts')
   .then(response => response.json())
   .then(data => {
     console.log('Random Dog Fact:', data.facts[0]);
@@ -108,3 +110,4 @@ fetch('https://dog-api.kinduff.com/api/facts')
   .catch(error => {
     console.error('Error fetching dog fact:', error);
   });
+};
