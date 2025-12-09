@@ -426,3 +426,9 @@ li {
   margin-bottom: 100px;
   padding-bottom: 25px;
 }
+
+.facts {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}

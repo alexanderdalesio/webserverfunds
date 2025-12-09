@@ -15,7 +15,9 @@
                 <p4> | </p4>
                 <p4><a href="rankings.php" class="alt">Rankings</a></p4>
                 <p4> | </p4>
-                <p4><a href="gpio-ctrl.php" class="alt">GPIO Control</a></p4>
+                <p4><a href="gpio-ctrl.php" class="alt">GPIO</a></p4>
+                <p4> | </p4>
+                <p4><a href=facts.php>Facts</a></p4>
             </div>
 
             <div class="logo">
@@ -35,7 +37,10 @@
                 <p> </p>
             </div>
 
-        <p id="fact"></p>
+        <div class="facts">
+            <h2>Did you know?</h2>
+            <p id="fact"></p>
+        </div>        
         
         <div class="user-agent">
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
