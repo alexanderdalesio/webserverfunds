@@ -433,3 +433,8 @@ li {
   padding-bottom: 470px;
   width: calc(100% - 550px);
 }
+
+.fact-timer {
+  padding-top: 20px;
+  font-style: italic;
+}
