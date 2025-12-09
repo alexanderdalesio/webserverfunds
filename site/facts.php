@@ -41,7 +41,7 @@
             <h2>Did you know?</h2>
             <p id="fact"></p>
             <br><br>
-            <p1><i>Next fact loads in</i></p1><p1 id="fact-timer" class="fact-timer"></p1>
+            <p1><i>Next fact loads in...</i></p1><p1 id="fact-timer" class="fact-timer"></p1>
         </div>        
         
         <div class="user-agent">
