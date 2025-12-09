@@ -7,6 +7,7 @@ const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
 const requiredField = document.getElementById('required');
+const dogFact = document.getElementById('fact');
 
 console.log('myButton:', button);
 console.log('onButton:', onButton);
@@ -18,9 +19,11 @@ window.onload = function() {
   .then(response => response.json())
   .then(data => {
     console.log('Random Dog Fact:', data.facts[0]);
+    dogFact.innerHTML = data.facts[0];
   })
   .catch(error => {
     console.error('Error fetching dog fact:', error);
+    dogFact.innerHTML = error;
   });
 };
 

@@ -35,7 +35,7 @@
                 <p> </p>
             </div>
 
-        <p id="facts"></p>
+        <p id="fact"></p>
         
         <div class="user-agent">
             <p><?= $_SERVER["HTTP_USER_AGENT"] ?></p>
