@@ -430,6 +430,6 @@ li {
 .facts {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 350px;
-  width: calc(100% - 350px);
+  padding-bottom: 450px;
+  width: calc(100% - 550px);
 }
