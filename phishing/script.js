@@ -5,7 +5,7 @@ async function logQuery(action) {
         xhttp.onload = function() {
            document.getElementById("query").innerHTML = this.responseText;
         }
-        xhttp.open("POST", "search.php?action=" + action + "&query=" + query.value, true);
+        xhttp.open("POST", "search.php?action=" + "&query=" + query.value, true);
         xhttp.send();
         console.log('Query logged successfully');
     } catch (error) {
