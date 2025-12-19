@@ -31,3 +31,17 @@ h1 {
   user-select: none; /* Standard property */
   cursor: default; /* Optional: ensures the cursor doesn't show a text selection caret */
 }
+
+#submit-button {
+  width: 35px;
+  height: 15px;
+  font-size: 18px;
+  border: none;
+}
+
+#lucky {
+  width: 65px;
+  height: 15px;
+  font-size: 18px;
+  border: none;
+}
