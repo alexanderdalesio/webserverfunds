@@ -38,7 +38,7 @@ h1 {
   font-size: 15px;
   border: none;
   border-radius: 8px;
-  background: rgb(231, 231, 231);
+  background: rgb(233, 233, 233);
 }
 
 #submit {
@@ -47,7 +47,7 @@ h1 {
   font-size: 15px;
   border: none;
   border-radius: 8px;
-  background: #d0d0d0;
+  background: rgb(222, 222, 222);
 }
 
 #lucky {
@@ -56,5 +56,5 @@ h1 {
   font-size: 15px;
   border: none;
   border-radius: 8px;
-  background: #d0d0d0;
+  background: rgb(222, 222, 222);
 }
