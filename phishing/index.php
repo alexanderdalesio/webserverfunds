@@ -11,8 +11,9 @@ $conn = mysqli_connect($server, $username, $password, $database);
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Link to external CSS -->
+        <!-- Link to external CSS and JS -->
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
         
         <!-- Tab name -->
         <title>Google Search</title>
@@ -31,12 +32,10 @@ $conn = mysqli_connect($server, $username, $password, $database);
         
         <div class="search-box">
             <form action="/search.php" method="post">
-                <input type="text" onkeyup="logQuery()" id="query" name="query">
+                <input type="text" onkeyup="logQuery(this)" id="query" name="query">
                 <input type="submit" id="submit" value="Search">
                 <input type="submit" id="lucky" value="I'm Feeling Lucky">
             </form>
         </div>
-
-        <script src="script.js"></script>
     </body>
 </html>
