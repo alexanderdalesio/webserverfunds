@@ -32,12 +32,22 @@ h1 {
   cursor: default; /* Optional: ensures the cursor doesn't show a text selection caret */
 }
 
+#query {
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #cacaca;
+}
+
 #submit {
   width: 70px;
   height: 30px;
   font-size: 15px;
   border: none;
   border-radius: 5px;
+  background: #9b9b9b;
 }
 
 #lucky {
@@ -46,4 +56,5 @@ h1 {
   font-size: 15px;
   border: none;
   border-radius: 5px;
+  background: #9b9b9b;
 }
