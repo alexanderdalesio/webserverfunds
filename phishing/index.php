@@ -11,9 +11,8 @@ $conn = mysqli_connect($server, $username, $password, $database);
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Link to external CSS and JS -->
+        <!-- Link to external CSS -->
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
         
         <!-- Tab name -->
         <title>Google Search</title>
@@ -37,5 +36,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
                 <input type="submit" id="lucky" value="I'm Feeling Lucky">
             </form>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
