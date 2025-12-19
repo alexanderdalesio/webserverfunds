@@ -6,10 +6,6 @@ $password = "password";
 $database = "phishingDB";
 
 $conn = mysqli_connect($server, $username, $password, $database);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully<br>";
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +15,12 @@ echo "Connected successfully<br>";
     </head>
     <body>
         <h1>Google</h1>
-        <p>Search</p>
+        
+        <div class="search">
+            <form action="/search.php">
+                <label for="query">Search: </label>
+                <input type="text" id="query" name="query">
+            </form>
+        </div>
     </body>
 </html>
