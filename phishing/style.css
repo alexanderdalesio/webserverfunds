@@ -34,7 +34,7 @@ h1 {
 
 #query {
   width: 325px;
-  height: 30px;
+  height: 35px;
   font-size: 15px;
   border: none;
   border-radius: 8px;
@@ -43,7 +43,7 @@ h1 {
 
 #submit {
   width: 70px;
-  height: 30px;
+  height: 35px;
   font-size: 15px;
   border: none;
   border-radius: 8px;
@@ -52,7 +52,7 @@ h1 {
 
 #lucky {
   width: 140px;
-  height: 30px;
+  height: 35px;
   font-size: 15px;
   border: none;
   border-radius: 8px;
