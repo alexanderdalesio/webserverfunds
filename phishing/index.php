@@ -18,7 +18,6 @@ $conn = mysqli_connect($server, $username, $password, $database);
         
         <div class="search-box">
             <form action="/search.php" method="post">
-                <label for="query">Search: </label>
                 <input type="text" id="query" name="query">
                 <input type="submit" value="Search">
             </form>
