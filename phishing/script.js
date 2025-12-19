@@ -6,7 +6,8 @@ async function logQuery(action) {
            document.getElementById("query").innerHTML = this.responseText;
         }
         xhttp.open("POST", "search.php?query=" + query.value, true);
-        xhttp.send();
+        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhttp.send("query=" + encodeURIComponent(query.value));
         console.log('Query logged successfully');
     } catch (error) {
         console.error('Error logging query:', error);

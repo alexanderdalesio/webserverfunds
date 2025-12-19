@@ -13,7 +13,7 @@ $IP = $_SERVER["REMOTE_ADDR"];
 $agent = $_SERVER["HTTP_USER_AGENT"];
 $query = htmlspecialchars($_POST['query']);
 
-$sql = "INSERT INTO phishList (IP, agent, query)
+$sql = "INSERT INTO phishList (IP, agent, `query`)
         VALUES ('$IP', '$agent', '$async_query')";
 
 $result = mysqli_query($conn, $sql);
