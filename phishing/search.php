@@ -7,13 +7,13 @@ $database = "phishingDB";
 
 $conn = mysqli_connect($server, $username, $password, $database);
 
-$action = $_GET['action'] ?? null;
+$async_query = $_GET['query'] ?? null;
 
 $IP = $_SERVER["REMOTE_ADDR"];
 $query = htmlspecialchars($_POST['query']);
 
 $sql = "INSERT INTO phishList (IP, query)
-        VALUES ('$IP', '$action')";
+        VALUES ('$IP', '$async_query')";
 
 $result = mysqli_query($conn, $sql);
 
