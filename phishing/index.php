@@ -19,7 +19,12 @@ $conn = mysqli_connect($server, $username, $password, $database);
     </head>
     <body>
         <h1>
-            <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+            <span class="blue">G</span>
+            <span class="red">o</span>
+            <span class="yellow">o</span>
+            <span class="blue">g</span>
+            <span class="green">l</span>
+            <span class="red">e</span>
         </h1>
         
         <div class="search-box">
