@@ -47,7 +47,9 @@ else { }
                 <p4> | </p4>
                 <p4><a href="rankings.php" class="alt">Rankings</a></p4>
                 <p4> | </p4>
-                <p4><a href="gpio-ctrl.php" class="alt">GPIO Control</a></p4>
+                <p4><a href="gpio-ctrl.php" class="alt">GPIO</a></p4>
+                <p4> | </p4>
+                <p4><a href="facts.php" class="alt">Facts</a></p4>
             </div>
 
             <div class="logo">

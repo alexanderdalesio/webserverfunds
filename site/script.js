@@ -1,3 +1,4 @@
+const refreshButton = document.getElementById('refreshButton');
 const button = document.getElementById('myButton');
 const onButton = document.getElementById('onButton');
 const offButton = document.getElementById('offButton');
@@ -6,18 +7,49 @@ const text = document.getElementById('textToChange');
 const bg = document.getElementById('bg');
 const buttonText = document.getElementById('buttonText');
 const requiredField = document.getElementById('required');
-
-// Sensor data-related
-const refreshButton = document.getElementById('refreshButton');
-const temperature_ = document.getElementById('temperature-value');
-const humidity_ = document.getElementById('humidity-value');
-const pressure_ = document.getElementById('pressure-value');
-const altitude_ = document.getElementById('altitude-value');
+const dogFact = document.getElementById('fact');
+const factTimer = document.getElementById('fact-timer');
 
 console.log('myButton:', button);
 console.log('onButton:', onButton);
 console.log('offButton:', offButton);
 console.log('toggleButton:', toggleButton);
+
+window.onload = function() {
+    fetch('https://dogapi.dog/api/v1/facts?number=1')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Random Dog Fact:', data.facts[0]);
+    dogFact.innerHTML = data.facts[0];
+  })
+  .catch(error => {
+    console.error('Error fetching dog fact:', error);
+    dogFact.innerHTML = error;
+  });
+};
+
+// 10-second countdown for next fact
+let countdown = 10;
+
+setInterval(() => {
+    countdown--; // Count down by 1
+    if (countdown < 0) {
+        countdown = 10;     // Reset countdown
+        fetch('https://dogapi.dog/api/v1/facts?number=1')       // Fetch new dog fact
+      .then(response => response.json())
+        .then(data => {
+            console.log('Random Dog Fact:', data.facts[0]);
+            dogFact.innerHTML = data.facts[0];
+        })
+        .catch(error => {
+            console.error('Error fetching dog fact:', error);
+            dogFact.innerHTML = error;
+        });
+    }
+    factTimer.innerHTML = countdown;
+}, 1000);
+
+factTimer.innerHTML = countdown;
 
 // Start with BG1
 let bgState = 1;
@@ -42,6 +74,7 @@ button.onmouseover = function() {
     console.log('HOVER ON');
     button.style.backgroundColor = '#4f6184ff';
 };
+
 button.onmouseout = function() {
     button.style.backgroundColor = '';
 };
@@ -97,34 +130,10 @@ offButton.onclick = () => sendGPIO("off");
 toggleButton.onclick = () => sendGPIO("toggle");
 
 // Required field alert logic
-if (requiredField) {
-    requiredField.onblur = function() {
-        if (!requiredField.value) {
-            alert('Please fill out the confirmation field with PUPPY.');
-        }
-    };
-}
-
-// Read sensor data
-async function readSensor(action) {
-    try {
-        const response = await fetch(`gpio.php?action=${action}`);
-        const data = await response.json();
-        const { temperature, humidity, pressure, altitude } = data;
-
-        return { temperature, humidity, pressure, altitude };
-    } 
-    catch (err) {
-        console.error("Error reading sensor data:", err);
-    }
-}
-
-// Refresh sensor data values displayed
-refreshButton.onclick = async function () {
-    const { temperature, humidity, pressure, altitude } = await readSensor("read");
-
-    temperature_.innerHTML = temperature;
-    humidity_.innerHTML = humidity;
-    pressure_.innerHTML = pressure;
-    altitude_.innerHTML = altitude;
-};
+// if (requiredField) {
+//     requiredField.onblur = function() {
+//         if (!requiredField.value) {
+//             alert('Please fill out the confirmation field with PUPPY.');
+//         }
+//     };
+// }

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+body {
+  display: flex;
+  font-size: 35px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  font-family: 'Google Sans', sans-serif;
+}
+
+h1 {
+    padding-top: 150px;
+    font-size: 100px;
+    font-family: 'Google Sans', sans-serif;
+    letter-spacing: -13px;
+}
+
+.blue{color: #4285f4;}
+.red{color:	#ea4335;}
+.yellow{color:#fbbc05;}
+.green{color:#34a853;}
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari, Chrome */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard property */
+  cursor: default; /* Optional: ensures the cursor doesn't show a text selection caret */
+}
+
+#query {
+  width: 325px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(241, 241, 241);
+}
+
+#submit {
+  width: 70px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(222, 222, 222);
+}
+
+#lucky {
+  width: 140px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(222, 222, 222);
+}
