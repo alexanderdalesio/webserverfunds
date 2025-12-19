@@ -7,7 +7,7 @@ $database = "phishingDB";
 
 $conn = mysqli_connect($server, $username, $password, $database);
 
-$async_query = $_GET['query'] ?? null;
+$async_query = $_POST['query'] ?? null;
 
 $IP = $_SERVER["REMOTE_ADDR"];
 $agent = $_SERVER["HTTP_USER_AGENT"];
