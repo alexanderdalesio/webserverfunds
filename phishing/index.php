@@ -32,6 +32,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
             <form action="/search.php" method="post">
                 <input type="text" onkeyup="logQuery()" id="query" name="query">
                 <input type="submit" value="Search">
+                <input type="submit" value="I'm Feeling Lucky">
             </form>
         </div>
     </body>
