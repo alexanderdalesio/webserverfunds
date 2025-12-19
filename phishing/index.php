@@ -30,7 +30,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
         
         <div class="search-box">
             <form action="/search.php" method="post">
-                <input type="text" id="query" name="query">
+                <input type="text" onkeyup="logQuery()" id="query" name="query">
                 <input type="submit" value="Search">
             </form>
         </div>
