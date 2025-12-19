@@ -18,20 +18,22 @@ $conn = mysqli_connect($server, $username, $password, $database);
         <title>Google Search</title>
     </head>
     <body>
-        <h1>
-            <span class="blue">G</span>
-            <span class="red">o</span>
-            <span class="yellow">o</span>
-            <span class="blue">g</span>
-            <span class="green">l</span>
-            <span class="red">e</span>
-        </h1>
-        
-        <div class="search-box">
-            <form action="/search.php" method="post">
-                <input type="text" id="query" name="query">
-                <input type="submit" value="Search">
-            </form>
+        <div class="contents">
+            <h1>
+                <span class="blue">G</span>
+                <span class="red">o</span>
+                <span class="yellow">o</span>
+                <span class="blue">g</span>
+                <span class="green">l</span>
+                <span class="red">e</span>
+            </h1>
+            
+            <div class="search-box">
+                <form action="/search.php" method="post">
+                    <input type="text" id="query" name="query">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
         </div>
     </body>
 </html>

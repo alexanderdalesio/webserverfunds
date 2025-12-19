@@ -18,6 +18,15 @@ h1 {
     letter-spacing: -8px;
 }
 
+content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 50px;
+}
+
 .blue{color: #4285f4;}
 .red{color:	#ea4335;}
 .yellow{color:#fbbc05;}
