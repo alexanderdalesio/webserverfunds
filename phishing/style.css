@@ -39,6 +39,7 @@ h1 {
   border: none;
   border-radius: 8px;
   background: rgb(233, 233, 233);
+  padding: 8px;
 }
 
 #submit {
