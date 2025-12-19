@@ -17,7 +17,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
         <h1>Google</h1>
         
         <div class="search-box">
-            <form action="/search.php">
+            <form action="/search.php" method="post">
                 <label for="query">Search: </label>
                 <input type="text" id="query" name="query">
                 <input type="submit" value="Search">
