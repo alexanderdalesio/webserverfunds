@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
-.container {
-  position: relative; /* Needed so the child positions relative to this, not the body */
-  min-height: 100vh;
-}
-
 body {
   display: flex;
   font-size: 35px;
@@ -21,12 +16,6 @@ h1 {
     font-size: 60px;
     font-family: 'Google Sans', sans-serif;
     letter-spacing: -8px;
-}
-
-content {
-  display: grid;
-  place-items: center; /* Centers both horizontally and vertically */
-  min-height: 100vh;
 }
 
 .blue{color: #4285f4;}
