@@ -18,7 +18,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
         <title>Google Search</title>
     </head>
     <body>
-        <h1>Google</h1>
+        <h1><span class="blue">F</span><span class="rosso">i</span><span class="giallo">l</span><span class="verde">o</span></h1>
         
         <div class="search-box">
             <form action="/search.php" method="post">

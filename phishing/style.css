@@ -2,6 +2,7 @@
 
 body {
   display: flex;
+  font-size: 20px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -10,3 +11,15 @@ body {
   margin: 0;
   font-family: 'Google Sans', sans-serif;
 }
+
+h1 {font-size: 36px;
+   font-family: sans-serif;
+   }
+.blue{color: blue;}
+.rosso{color:red;}
+.grigio{color:grey;}
+.oro{color:gold;}
+.fucsia{color:fuchsia;}
+.verde{color:green;}
+.giallo{color: yellow;}
+.rosa{color:pink;}
