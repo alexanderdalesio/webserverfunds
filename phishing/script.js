@@ -1,11 +1,9 @@
-const query = document.getElementById('query');
-
 // Asynchronous capture user input from query field
 async function logQuery(action) {
     try {
         const xhttp = new XMLHttpRequest();
         xhttp.onload = function() {
-           query.innerHTML = this.responseText;
+           document.getElementById("query").innerHTML = this.responseText;
         }
         xhttp.open("POST", "search.php?action=" + action + "&query=" + query.value, true);
         xhttp.send();
