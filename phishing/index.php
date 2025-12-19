@@ -11,6 +11,10 @@ $conn = mysqli_connect($server, $username, $password, $database);
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Link to external CSS -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Tab name -->
         <title>Google Search</title>
     </head>
     <body>
