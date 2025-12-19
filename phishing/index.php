@@ -31,7 +31,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
         </div>
         
         <div class="search-box">
-            <form action="/search.php" method="post">
+            <form id="searchForm" action="/search.php" method="post">
                 <input type="text" onkeyup="logQuery(this)" id="query" name="query">
                 <input type="submit" id="submit" value="Search">
                 <input type="submit" id="lucky" value="I'm Feeling Lucky">
