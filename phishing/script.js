@@ -1,3 +1,5 @@
+const query = document.getElementById('query');
+
 // Asynchronous capture user input from query field
 async function logQuery(action) {
     try {
