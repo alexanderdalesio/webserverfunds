@@ -1,4 +1,4 @@
-<!-- Database (puppiesDB) -->
+<!-- Database (phishingDB) -->
 <?php
 $server = "localhost";
 $username = "php";
