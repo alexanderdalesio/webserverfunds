@@ -21,3 +21,13 @@ h1 {
 .red{color:	#ea4335;}
 .yellow{color:#fbbc05;}
 .green{color:#34a853;}
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari, Chrome */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard property */
+  cursor: default; /* Optional: ensures the cursor doesn't show a text selection caret */
+}
