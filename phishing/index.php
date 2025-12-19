@@ -16,10 +16,11 @@ $conn = mysqli_connect($server, $username, $password, $database);
     <body>
         <h1>Google</h1>
         
-        <div class="search">
+        <div class="search-box">
             <form action="/search.php">
                 <label for="query">Search: </label>
                 <input type="text" id="query" name="query">
+                <input type="Search" value="search">
             </form>
         </div>
     </body>
