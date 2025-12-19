@@ -19,7 +19,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
         <title>Google Search</title>
     </head>
     <body>
-        <div class="contents">
+        <div class="content">
             <h1>
                 <span class="blue">G</span>
                 <span class="red">o</span>
