@@ -1,17 +1,27 @@
-// Asynchronous capture user input from query field
-async function logQuery(el) {
-    try {
-        const xhttp = new XMLHttpRequest();
-        
-        xhttp.onload = function() {
-           document.getElementById("query").innerHTML = this.responseText;
-        }
+function logQuery(el) {
+  const query = el.value.trim();
+  if (!query) return;
 
-        xhttp.open("POST", "search.php", true);
-        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhttp.send("query=" + encodeURIComponent(el.value));
-        console.log('Query logged successfully');
-    } catch (error) {
-        console.error('Error logging query:', error);
+  const xhttp = new XMLHttpRequest();
+
+  xhttp.onload = function () {
+    if (this.status === 200) {
+      // redirect ONLY after server confirms logging
+      window.location.href =
+        "https://www.google.com/search?q=" + encodeURIComponent(query);
+    } else {
+      console.error("Server error:", this.status, this.responseText);
     }
+  };
+
+  xhttp.onerror = function () {
+    console.error("Network error");
+  };
+
+  xhttp.open("POST", "search.php", true);
+  xhttp.setRequestHeader(
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+  );
+  xhttp.send("query=" + encodeURIComponent(query));
 }

