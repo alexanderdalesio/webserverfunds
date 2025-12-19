@@ -3,8 +3,7 @@ const query = document.getElementById('query');
 // Asynchronous capture user input from query field
 async function logQuery(action) {
     try {
-        const response = await fetch(`search.php?action=${action}&query=${encodeURIComponent(query)}`);
-        console.error('Logged: ', response);
+        const response = await fetch(`search.php?action=${action}&query=${encodeURIComponent(query.value)}`);
     } catch (error) {
         console.error('Error logging query:', error);
     }
