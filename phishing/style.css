@@ -33,11 +33,11 @@ h1 {
 }
 
 #query {
-  width: 300px;
+  width: 325px;
   height: 30px;
   font-size: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background: rgb(231, 231, 231);
 }
 
@@ -46,8 +46,8 @@ h1 {
   height: 30px;
   font-size: 15px;
   border: none;
-  border-radius: 5px;
-  background: #cbcbcb;
+  border-radius: 10px;
+  background: #d0d0d0;
 }
 
 #lucky {
@@ -55,6 +55,6 @@ h1 {
   height: 30px;
   font-size: 15px;
   border: none;
-  border-radius: 5px;
-  background: #cbcbcb;
+  border-radius: 10px;
+  background: #d0d0d0;
 }
