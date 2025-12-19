@@ -20,7 +20,7 @@ $conn = mysqli_connect($server, $username, $password, $database);
             <form action="/search.php">
                 <label for="query">Search: </label>
                 <input type="text" id="query" name="query">
-                <input type="Search" value="search">
+                <input type="submit" value="Search">
             </form>
         </div>
     </body>
