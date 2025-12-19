@@ -32,16 +32,16 @@ h1 {
   cursor: default; /* Optional: ensures the cursor doesn't show a text selection caret */
 }
 
-#submit-button {
-  width: 35px;
-  height: 15px;
-  font-size: 18px;
+#submit {
+  width: 200px;
+  height: 30px;
+  font-size: 10px;
   border: none;
 }
 
 #lucky {
-  width: 65px;
-  height: 15px;
-  font-size: 18px;
+  width: 300px;
+  height: 30px;
+  font-size: 10px;
   border: none;
 }
